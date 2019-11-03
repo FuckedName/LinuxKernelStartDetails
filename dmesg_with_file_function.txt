@@ -24,6 +24,22 @@ kernel version:5.3.1
         printk(KERN_INFO "%s %s "pr_fmt(fmt), __FILE__, __FUNCTION__, ##__VA_ARGS__)
         //printk(KERN_INFO pr_fmt(fmt), ##__VA_ARGS__)
 
+after modified printk.h, you need execute the following lines:
+n=50
+make V=1 -j$n
+make -j$n V=1  modules_install 
+make  V=1 install
+mkinitramfs -o /boot/initrd.img-5.3.1 
+update-initramfs -c -k 5.3.1 
+update-grub2
+reboot
+
+if do not compile kernel in first time, the following three commands can skip.
+mkinitramfs -o /boot/initrd.img-5.3.1 
+update-initramfs -c -k 5.3.1 
+update-grub2
+
+
 
 dmesg log:
 [    0.000000] microcode: microcode updated early to revision 0xcc, date = 2019-04-01
