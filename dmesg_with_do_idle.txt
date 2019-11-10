@@ -1,0 +1,1295 @@
+[    0.000000] kernel: microcode: microcode updated early to revision 0xcc, date = 2019-04-01
+[    0.000000] kernel: init/main.c start_kernel 
+[    0.000000] kernel: kernel/cgroup/cgroup.c cgroup_init_early cgroup: kernel/cgroup/cgroup.c cgroup_init_early
+[    0.000000] kernel: kernel/cpu.c boot_cpu_init kernel/cpu.c boot_cpu_init
+[    0.000000] kernel: init/main.c start_kernel Linux version 5.3.1 (root@a-HP-ENVY-Notebook) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #17 SMP Sun Nov 10 21:37:06 CST 2019
+[    0.000000] kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-5.3.1 root=UUID=0df0ec6d-15f8-47d8-a618-50937a2a0db2 ro quiet splash vt.handoff=7
+[    0.000000] kernel: arch/x86/kernel/cpu/common.c early_cpu_init KERNEL supported cpus:
+[    0.000000] kernel: arch/x86/kernel/cpu/common.c early_cpu_init   Intel GenuineIntel
+[    0.000000] kernel: arch/x86/kernel/cpu/common.c early_cpu_init   AMD AuthenticAMD
+[    0.000000] kernel: arch/x86/kernel/cpu/common.c early_cpu_init   Hygon HygonGenuine
+[    0.000000] kernel: arch/x86/kernel/cpu/common.c early_cpu_init   Centaur CentaurHauls
+[    0.000000] kernel: arch/x86/kernel/cpu/common.c early_cpu_init   zhaoxin   Shanghai  
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_feature x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_feature x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_feature x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_feature x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_feature x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_offset_size x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_offset_size x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c print_xstate_offset_size x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.000000] kernel: arch/x86/kernel/fpu/xstate.c fpu__init_system_xstate x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[    0.000000] kernel: kernel/jump_label.c jump_label_init kernel/jump_label.c jump_label_init
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__memory_setup BIOS-provided physical RAM map:
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000000000000-0x0000000000057fff] usable
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000000058000-0x0000000000058fff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000000059000-0x0000000000087fff] usable
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000000088000-0x00000000000fffff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000000100000-0x0000000073e41fff] usable
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000073e42000-0x0000000073e42fff] ACPI NVS
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000073e43000-0x0000000073e6cfff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000073e6d000-0x000000008a10dfff] usable
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x000000008a10e000-0x000000008a30dfff] type 20
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x000000008a30e000-0x000000008aafdfff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x000000008aafe000-0x000000008adfdfff] ACPI NVS
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x000000008adfe000-0x000000008aefdfff] ACPI data
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x000000008aefe000-0x000000008aefefff] usable
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x000000008aeff000-0x000000008fffffff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000fd000000-0x00000000fe7fffff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000feb00000-0x00000000feb03fff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000fed10000-0x00000000fed19fff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000fed84000-0x00000000fed84fff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x00000000ffa00000-0x00000000ffffffff] reserved
+[    0.000000] kernel: arch/x86/kernel/e820.c e820__print_table BIOS-e820: [mem 0x0000000100000000-0x000000026effffff] usable
+[    0.000000] kernel: init/main.c parse_early_param init/main.c parse_early_param
+[    0.000000] kernel: NX (Execute Disable) protection: active
+[    0.000000] kernel: arch/x86/platform/efi/efi.c efi_init efi: EFI v2.40 by INSYDE Corp.
+[    0.000000] kernel: drivers/firmware/efi/efi.c efi_config_parse_tables efi:  SMBIOS=0x8a37a000  ESRT=0x8a37d818  ACPI 2.0=0x8aefd014 
+[    0.000000] kernel: drivers/firmware/dmi_scan.c dmi_present SMBIOS 2.8 present.
+[    0.000000] kernel: drivers/firmware/dmi_scan.c dmi_present DMI: HP HP ENVY Notebook/81CC, BIOS F.23 09/13/2016
+[    0.000000] kernel: arch/x86/kernel/tsc.c determine_cpu_tsc_frequencies tsc: Detected 2400.000 MHz processor
+[    0.002391] kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.002393] kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.002402] kernel: arch/x86/kernel/e820.c e820_end_pfn last_pfn = 0x26f000 max_arch_pfn = 0x400000000
+[    0.002407] kernel: MTRR default type: uncachable
+[    0.002407] kernel: MTRR fixed ranges enabled:
+[    0.002409] kernel:   00000-9FFFF write-back
+[    0.002410] kernel:   A0000-BFFFF uncachable
+[    0.002411] kernel:   C0000-FFFFF write-protect
+[    0.002411] kernel: MTRR variable ranges enabled:
+[    0.002413] kernel:   0 base 0000000000 mask 7C00000000 write-back
+[    0.002414] kernel:   1 base 008AEFF000 mask 7FFFFFF000 uncachable
+[    0.002415] kernel:   2 base 008AF00000 mask 7FFFF00000 uncachable
+[    0.002416] kernel:   3 base 008B000000 mask 7FFF000000 uncachable
+[    0.002417] kernel:   4 base 008C000000 mask 7FFC000000 uncachable
+[    0.002418] kernel:   5 base 0090000000 mask 7FF0000000 uncachable
+[    0.002419] kernel:   6 base 00A0000000 mask 7FE0000000 uncachable
+[    0.002420] kernel:   7 base 00C0000000 mask 7FC0000000 uncachable
+[    0.002420] kernel:   8 disabled
+[    0.002421] kernel:   9 disabled
+[    0.003088] kernel: arch/x86/mm/pat.c __init_cache_modes x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.003252] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_cleanup total RAM covered: 14510M
+[    0.003420] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 64K         num_reg: 10          lose cover RAM: 12582972K
+[    0.003422] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 128K         num_reg: 10          lose cover RAM: 60K
+[    0.003423] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 256K         num_reg: 10          lose cover RAM: 60K
+[    0.003424] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 512K         num_reg: 10          lose cover RAM: 60K
+[    0.003426] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 1M         num_reg: 10          lose cover RAM: 60K
+[    0.003427] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 2M         num_reg: 8          lose cover RAM: 60K
+[    0.003428] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 4M         num_reg: 8          lose cover RAM: 60K
+[    0.003429] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 8M         num_reg: 8          lose cover RAM: 60K
+[    0.003431] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 16M         num_reg: 8          lose cover RAM: 60K
+[    0.003432] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 32M         num_reg: 8          lose cover RAM: 60K
+[    0.003433] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 64M         num_reg: 8          lose cover RAM: 60K
+[    0.003434] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 128M         num_reg: 8          lose cover RAM: 60K
+[    0.003435] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 256M         num_reg: 8          lose cover RAM: 60K
+[    0.003436] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 512M         num_reg: 9          lose cover RAM: 60K
+[    0.003438] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 1G         num_reg: 10          lose cover RAM: 60K
+[    0.003439] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64K         chunk_size: 2G         num_reg: 10          lose cover RAM: 60K
+[    0.003440] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 128K         num_reg: 10          lose cover RAM: 8388732K
+[    0.003442] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 256K         num_reg: 10          lose cover RAM: 124K
+[    0.003443] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 512K         num_reg: 10          lose cover RAM: 124K
+[    0.003444] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 1M         num_reg: 10          lose cover RAM: 124K
+[    0.003445] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 2M         num_reg: 8          lose cover RAM: 124K
+[    0.003446] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 4M         num_reg: 8          lose cover RAM: 124K
+[    0.003448] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 8M         num_reg: 8          lose cover RAM: 124K
+[    0.003449] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 16M         num_reg: 8          lose cover RAM: 124K
+[    0.003450] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 32M         num_reg: 8          lose cover RAM: 124K
+[    0.003451] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 64M         num_reg: 8          lose cover RAM: 124K
+[    0.003452] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 128M         num_reg: 8          lose cover RAM: 124K
+[    0.003453] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 256M         num_reg: 8          lose cover RAM: 124K
+[    0.003455] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 512M         num_reg: 9          lose cover RAM: 124K
+[    0.003456] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 1G         num_reg: 10          lose cover RAM: 124K
+[    0.003457] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128K         chunk_size: 2G         num_reg: 10          lose cover RAM: 124K
+[    0.003458] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 256K         num_reg: 10          lose cover RAM: 252K
+[    0.003459] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 512K         num_reg: 10          lose cover RAM: 252K
+[    0.003461] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 1M         num_reg: 10          lose cover RAM: 252K
+[    0.003462] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 2M         num_reg: 8          lose cover RAM: 252K
+[    0.003463] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 4M         num_reg: 8          lose cover RAM: 252K
+[    0.003464] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 8M         num_reg: 8          lose cover RAM: 252K
+[    0.003465] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 16M         num_reg: 8          lose cover RAM: 252K
+[    0.003467] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 32M         num_reg: 8          lose cover RAM: 252K
+[    0.003468] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 64M         num_reg: 8          lose cover RAM: 252K
+[    0.003469] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 128M         num_reg: 8          lose cover RAM: 252K
+[    0.003470] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 256M         num_reg: 8          lose cover RAM: 252K
+[    0.003471] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 512M         num_reg: 9          lose cover RAM: 252K
+[    0.003472] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 1G         num_reg: 10          lose cover RAM: 252K
+[    0.003474] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256K         chunk_size: 2G         num_reg: 10          lose cover RAM: 252K
+[    0.003475] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 512K         num_reg: 9          lose cover RAM: 508K
+[    0.003476] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 1M         num_reg: 10          lose cover RAM: 508K
+[    0.003477] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 2M         num_reg: 8          lose cover RAM: 508K
+[    0.003478] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 4M         num_reg: 8          lose cover RAM: 508K
+[    0.003479] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 8M         num_reg: 8          lose cover RAM: 508K
+[    0.003481] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 16M         num_reg: 8          lose cover RAM: 508K
+[    0.003482] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 32M         num_reg: 8          lose cover RAM: 508K
+[    0.003483] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 64M         num_reg: 8          lose cover RAM: 508K
+[    0.003484] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 128M         num_reg: 8          lose cover RAM: 508K
+[    0.003485] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 256M         num_reg: 8          lose cover RAM: 508K
+[    0.003486] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 512M         num_reg: 9          lose cover RAM: 508K
+[    0.003488] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 1G         num_reg: 10          lose cover RAM: 508K
+[    0.003489] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512K         chunk_size: 2G         num_reg: 10          lose cover RAM: 508K
+[    0.003490] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 1M         num_reg: 8          lose cover RAM: 1020K
+[    0.003491] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 2M         num_reg: 8          lose cover RAM: 1020K
+[    0.003492] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 4M         num_reg: 7          lose cover RAM: 1020K
+[    0.003494] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 8M         num_reg: 7          lose cover RAM: 1020K
+[    0.003495] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 16M         num_reg: 7          lose cover RAM: 1020K
+[    0.003496] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 32M         num_reg: 7          lose cover RAM: 1020K
+[    0.003497] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 64M         num_reg: 7          lose cover RAM: 1020K
+[    0.003498] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 128M         num_reg: 7          lose cover RAM: 1020K
+[    0.003499] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 256M         num_reg: 7          lose cover RAM: 1020K
+[    0.003501] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 512M         num_reg: 8          lose cover RAM: 1020K
+[    0.003502] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 1G         num_reg: 9          lose cover RAM: 1020K
+[    0.003503] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1M         chunk_size: 2G         num_reg: 9          lose cover RAM: 1020K
+[    0.003504] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 2M         num_reg: 8          lose cover RAM: 1020K
+[    0.003505] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 4M         num_reg: 7          lose cover RAM: 1020K
+[    0.003506] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 8M         num_reg: 7          lose cover RAM: 1020K
+[    0.003508] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 16M         num_reg: 7          lose cover RAM: 1020K
+[    0.003509] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 32M         num_reg: 7          lose cover RAM: 1020K
+[    0.003510] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 64M         num_reg: 7          lose cover RAM: 1020K
+[    0.003511] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 128M         num_reg: 7          lose cover RAM: 1020K
+[    0.003512] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 256M         num_reg: 7          lose cover RAM: 1020K
+[    0.003513] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 512M         num_reg: 8          lose cover RAM: 1020K
+[    0.003515] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 1G         num_reg: 9          lose cover RAM: 1020K
+[    0.003516] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2M         chunk_size: 2G         num_reg: 9          lose cover RAM: 1020K
+[    0.003517] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 4M         num_reg: 7          lose cover RAM: 3068K
+[    0.003518] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 8M         num_reg: 7          lose cover RAM: 3068K
+[    0.003519] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 16M         num_reg: 7          lose cover RAM: 3068K
+[    0.003520] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 32M         num_reg: 7          lose cover RAM: 3068K
+[    0.003521] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 64M         num_reg: 7          lose cover RAM: 3068K
+[    0.003523] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 128M         num_reg: 7          lose cover RAM: 3068K
+[    0.003524] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 256M         num_reg: 7          lose cover RAM: 3068K
+[    0.003525] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 512M         num_reg: 8          lose cover RAM: 3068K
+[    0.003526] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 1G         num_reg: 9          lose cover RAM: 3068K
+[    0.003527] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 4M         chunk_size: 2G         num_reg: 9          lose cover RAM: 3068K
+[    0.003528] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 8M         num_reg: 6          lose cover RAM: 7164K
+[    0.003530] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 16M         num_reg: 7          lose cover RAM: 7164K
+[    0.003531] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 32M         num_reg: 7          lose cover RAM: 7164K
+[    0.003532] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 64M         num_reg: 7          lose cover RAM: 7164K
+[    0.003533] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 128M         num_reg: 7          lose cover RAM: 7164K
+[    0.003534] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 256M         num_reg: 7          lose cover RAM: 7164K
+[    0.003535] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 512M         num_reg: 8          lose cover RAM: 7164K
+[    0.003536] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 1G         num_reg: 9          lose cover RAM: 7164K
+[    0.003538] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 8M         chunk_size: 2G         num_reg: 9          lose cover RAM: 7164K
+[    0.003539] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 16M         num_reg: 5          lose cover RAM: 15356K
+[    0.003540] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 32M         num_reg: 5          lose cover RAM: 15356K
+[    0.003541] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 64M         num_reg: 6          lose cover RAM: 15356K
+[    0.003542] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 128M         num_reg: 6          lose cover RAM: 15356K
+[    0.003544] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 256M         num_reg: 6          lose cover RAM: 15356K
+[    0.003545] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 512M         num_reg: 7          lose cover RAM: 15356K
+[    0.003546] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 1G         num_reg: 8          lose cover RAM: 15356K
+[    0.003547] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 16M         chunk_size: 2G         num_reg: 8          lose cover RAM: 15356K
+[    0.003548] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 32M         chunk_size: 32M         num_reg: 5          lose cover RAM: 15356K
+[    0.003549] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 32M         chunk_size: 64M         num_reg: 6          lose cover RAM: 15356K
+[    0.003551] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 32M         chunk_size: 128M         num_reg: 6          lose cover RAM: 15356K
+[    0.003552] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 32M         chunk_size: 256M         num_reg: 6          lose cover RAM: 15356K
+[    0.003553] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 32M         chunk_size: 512M         num_reg: 7          lose cover RAM: 15356K
+[    0.003554] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 32M         chunk_size: 1G         num_reg: 8          lose cover RAM: 15356K
+[    0.003555] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 32M         chunk_size: 2G         num_reg: 8          lose cover RAM: 15356K
+[    0.003556] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64M         chunk_size: 64M         num_reg: 4          lose cover RAM: 48124K
+[    0.003558] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64M         chunk_size: 128M         num_reg: 4          lose cover RAM: 48124K
+[    0.003559] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64M         chunk_size: 256M         num_reg: 5          lose cover RAM: 48124K
+[    0.003560] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64M         chunk_size: 512M         num_reg: 6          lose cover RAM: 48124K
+[    0.003561] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64M         chunk_size: 1G         num_reg: 7          lose cover RAM: 48124K
+[    0.003562] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 64M         chunk_size: 2G         num_reg: 7          lose cover RAM: 48124K
+[    0.003564] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128M         chunk_size: 128M         num_reg: 4          lose cover RAM: 48124K
+[    0.003565] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128M         chunk_size: 256M         num_reg: 5          lose cover RAM: 48124K
+[    0.003566] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128M         chunk_size: 512M         num_reg: 6          lose cover RAM: 48124K
+[    0.003567] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128M         chunk_size: 1G         num_reg: 7          lose cover RAM: 48124K
+[    0.003568] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 128M         chunk_size: 2G         num_reg: 7          lose cover RAM: 48124K
+[    0.003569] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256M         chunk_size: 256M         num_reg: 3          lose cover RAM: 179196K
+[    0.003571] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256M         chunk_size: 512M         num_reg: 3          lose cover RAM: 179196K
+[    0.003572] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256M         chunk_size: 1G         num_reg: 3          lose cover RAM: 179196K
+[    0.003573] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 256M         chunk_size: 2G         num_reg: 3          lose cover RAM: 179196K
+[    0.003574] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512M         chunk_size: 512M         num_reg: 3          lose cover RAM: 179196K
+[    0.003575] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512M         chunk_size: 1G         num_reg: 3          lose cover RAM: 179196K
+[    0.003576] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 512M         chunk_size: 2G         num_reg: 3          lose cover RAM: 179196K
+[    0.003578] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1G         chunk_size: 1G         num_reg: 3          lose cover RAM: 179196K
+[    0.003579] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 1G         chunk_size: 2G         num_reg: 3          lose cover RAM: 179196K
+[    0.003580] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_print_out_one_result  gran_size: 2G         chunk_size: 2G         num_reg: 3          lose cover RAM: 179196K
+[    0.003581] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_cleanup mtrr_cleanup: can not find optimal value
+[    0.003582] kernel: arch/x86/kernel/cpu/mtrr/cleanup.c mtrr_cleanup please specify mtrr_gran_size/mtrr_chunk_size
+[    0.003586] kernel: e820: update [mem 0x8aeff000-0xffffffff] usable ==> reserved
+[    0.003590] kernel: arch/x86/kernel/e820.c e820_end_pfn last_pfn = 0x8aeff max_arch_pfn = 0x400000000
+[    0.014019] kernel: drivers/firmware/efi/esrt.c efi_esrt_init esrt: Reserving ESRT space from 0x000000008a37d818 to 0x000000008a37d850.
+[    0.014029] kernel: arch/x86/kernel/check.c setup_bios_corruption_check check: Scanning 1 areas for low memory corruption
+[    0.014034] kernel: Using GB pages for direct mapping
+[    0.014036] kernel: BRK [0x228401000, 0x228401fff] PGTABLE
+[    0.014038] kernel: BRK [0x228402000, 0x228402fff] PGTABLE
+[    0.014039] kernel: BRK [0x228403000, 0x228403fff] PGTABLE
+[    0.014102] kernel: BRK [0x228404000, 0x228404fff] PGTABLE
+[    0.014104] kernel: BRK [0x228405000, 0x228405fff] PGTABLE
+[    0.014334] kernel: BRK [0x228406000, 0x228406fff] PGTABLE
+[    0.014384] kernel: BRK [0x228407000, 0x228407fff] PGTABLE
+[    0.014488] kernel: BRK [0x228408000, 0x228408fff] PGTABLE
+[    0.014561] kernel: BRK [0x228409000, 0x228409fff] PGTABLE
+[    0.014660] kernel: BRK [0x22840a000, 0x22840afff] PGTABLE
+[    0.014797] kernel: kernel/printk/printk.c setup_log_buf printk: kernel/printk/printk.c setup_log_buf
+[    0.014798] kernel: arch/x86/kernel/setup.c setup_arch Secure boot could not be determined
+[    0.014799] kernel: RAMDISK: [mem 0x2eff1000-0x337effff]
+[    0.014808] kernel: drivers/acpi/tables.c acpi_table_init ACPI: Early table checksum verification disabled
+[    0.014811] kernel: ACPI: RSDP 0x000000008AEFD014 000024 (v02 HPQOEM)
+[    0.014814] kernel: ACPI: XSDT 0x000000008AEB7188 0000FC (v01 HPQOEM SLIC-MPC 00000000 HP   01000013)
+[    0.014820] kernel: ACPI: FACP 0x000000008AEDF000 0000F4 (v05 HPQOEM SLIC-MPC 00000000 HP   00040000)
+[    0.014826] kernel: ACPI: DSDT 0x000000008AEBD000 01DD89 (v02 HPQOEM SLIC-MPC 00000000 ACPI 00040000)
+[    0.014830] kernel: ACPI: FACS 0x000000008ADFA000 000040
+[    0.014832] kernel: ACPI: UEFI 0x000000008AEFC000 000236 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014836] kernel: ACPI: UEFI 0x000000008AEFB000 000042 (v01 HPQOEM INSYDE   00000002 HP   00040000)
+[    0.014839] kernel: ACPI: SSDT 0x000000008AEF5000 005F19 (v01 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.014842] kernel: ACPI: MSDM 0x000000008AEF4000 000055 (v03 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.014845] kernel: ACPI: SSDT 0x000000008AEEF000 004D99 (v02 HPQOEM INSYDE   00003000 ACPI 00040000)
+[    0.014848] kernel: ACPI: SSDT 0x000000008AEE7000 007E8E (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.014851] kernel: ACPI: DBGP 0x000000008AEE6000 000034 (v01 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.014854] kernel: ACPI: DBG2 0x000000008AEE5000 000054 (v00 HPQOEM INSYDE   00000000 HP   00040000)
+[    0.014857] kernel: ACPI: SSDT 0x000000008AEE4000 000957 (v02 HPQOEM INSYDE   00000000 ACPI 00040000)
+[    0.014860] kernel: ACPI: ASF! 0x000000008AEE3000 0000A5 (v32 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014863] kernel: ACPI: ASPT 0x000000008AEE2000 000034 (v07 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014866] kernel: ACPI: BOOT 0x000000008AEE1000 000028 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014869] kernel: ACPI: DBGP 0x000000008AEE0000 000034 (v01 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.014872] kernel: ACPI: HPET 0x000000008AEDE000 000038 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014875] kernel: ACPI: LPIT 0x000000008AEDD000 000094 (v01 HPQOEM INSYDE   00000000 HP   00040000)
+[    0.014878] kernel: ACPI: APIC 0x000000008AEDC000 0000BC (v03 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.014881] kernel: ACPI: MCFG 0x000000008AEDB000 00003C (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014884] kernel: ACPI: SSDT 0x000000008AEBC000 0002D4 (v01 HPQOEM INSYDE   00000000 ACPI 00040000)
+[    0.014887] kernel: ACPI: SSDT 0x000000008AEB9000 002BAE (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.014890] kernel: ACPI: SSDT 0x000000008AEB8000 000593 (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.014893] kernel: ACPI: SSDT 0x000000008AEB6000 00019A (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.014896] kernel: ACPI: SSDT 0x000000008AEB5000 000B49 (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.014899] kernel: ACPI: SSDT 0x000000008AEB4000 000E73 (v02 HPQOEM INSYDE   00003000 ACPI 00040000)
+[    0.014902] kernel: ACPI: DMAR 0x000000008AEB3000 0000F0 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014905] kernel: ACPI: FPDT 0x000000008AEB2000 000044 (v01 HPQOEM SLIC-MPC 00000002 HP   00040000)
+[    0.014908] kernel: ACPI: BGRT 0x000000008AEB1000 000038 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.014917] kernel: ACPI: Local APIC address 0xfee00000
+[    0.015115] kernel: No NUMA configuration found
+[    0.015116] kernel: Faking a node at [mem 0x0000000000000000-0x000000026effffff]
+[    0.015129] kernel: NODE_DATA(0) allocated [mem 0x26efd5000-0x26effffff]
+[    0.015344] kernel: mm/page_alloc.c free_area_init_nodes Zone ranges:
+[    0.015345] kernel: mm/page_alloc.c free_area_init_nodes   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.015347] kernel: mm/page_alloc.c free_area_init_nodes   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.015348] kernel: mm/page_alloc.c free_area_init_nodes   Normal   [mem 0x0000000100000000-0x000000026effffff]
+[    0.015349] kernel: mm/page_alloc.c free_area_init_nodes   Device   empty
+[    0.015350] kernel: mm/page_alloc.c free_area_init_nodes Movable zone start for each node
+[    0.015354] kernel: mm/page_alloc.c free_area_init_nodes Early memory node ranges
+[    0.015355] kernel: mm/page_alloc.c free_area_init_nodes   node   0: [mem 0x0000000000001000-0x0000000000057fff]
+[    0.015356] kernel: mm/page_alloc.c free_area_init_nodes   node   0: [mem 0x0000000000059000-0x0000000000087fff]
+[    0.015357] kernel: mm/page_alloc.c free_area_init_nodes   node   0: [mem 0x0000000000100000-0x0000000073e41fff]
+[    0.015358] kernel: mm/page_alloc.c free_area_init_nodes   node   0: [mem 0x0000000073e6d000-0x000000008a10dfff]
+[    0.015359] kernel: mm/page_alloc.c free_area_init_nodes   node   0: [mem 0x000000008aefe000-0x000000008aefefff]
+[    0.015360] kernel: mm/page_alloc.c free_area_init_nodes   node   0: [mem 0x0000000100000000-0x000000026effffff]
+[    0.015646] kernel: mm/page_alloc.c zero_resv_unavail Zeroed struct page in unavailable ranges: 24470 pages
+[    0.015648] kernel: mm/page_alloc.c free_area_init_node Initmem setup node 0 [mem 0x0000000000001000-0x000000026effffff]
+[    0.015649] kernel: On node 0 totalpages: 2068586
+[    0.015651] kernel:   DMA zone: 64 pages used for memmap
+[    0.015651] kernel:   DMA zone: 96 pages reserved
+[    0.015652] kernel:   DMA zone: 3974 pages, LIFO batch:0
+[    0.015705] kernel:   DMA32 zone: 8772 pages used for memmap
+[    0.015706] kernel:   DMA32 zone: 561380 pages, LIFO batch:63
+[    0.026411] kernel:   Normal zone: 23488 pages used for memmap
+[    0.026412] kernel:   Normal zone: 1503232 pages, LIFO batch:63
+[    0.048692] kernel: Reserving Intel graphics memory at [mem 0x8c000000-0x8fffffff]
+[    0.049200] kernel: ACPI: PM-Timer IO Port: 0x1808
+[    0.049201] kernel: ACPI: Local APIC address 0xfee00000
+[    0.049209] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.049210] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.049211] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.049212] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.049213] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.049213] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.049214] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.049215] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.049243] kernel: arch/x86/kernel/apic/io_apic.c mp_register_ioapic IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[    0.049246] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.049247] kernel: drivers/acpi/tables.c acpi_table_print_madt_entry ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.049249] kernel: ACPI: IRQ0 used by override.
+[    0.049250] kernel: ACPI: IRQ9 used by override.
+[    0.049252] kernel: Using ACPI (MADT) for SMP configuration information
+[    0.049254] kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.049263] kernel: arch/x86/kernel/smpboot.c prefill_possible_map smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.049293] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.049295] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x00058000-0x00058fff]
+[    0.049297] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x00088000-0x000fffff]
+[    0.049299] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x73e42000-0x73e42fff]
+[    0.049300] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x73e43000-0x73e6cfff]
+[    0.049302] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x8a10e000-0x8a30dfff]
+[    0.049303] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x8a30e000-0x8aafdfff]
+[    0.049304] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x8aafe000-0x8adfdfff]
+[    0.049304] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x8adfe000-0x8aefdfff]
+[    0.049306] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x8aeff000-0x8fffffff]
+[    0.049307] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0x90000000-0xdfffffff]
+[    0.049308] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+[    0.049309] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xf0000000-0xfcffffff]
+[    0.049310] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfd000000-0xfe7fffff]
+[    0.049310] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfe800000-0xfeafffff]
+[    0.049311] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfeb00000-0xfeb03fff]
+[    0.049312] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfeb04000-0xfebfffff]
+[    0.049313] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    0.049313] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+[    0.049314] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfed00000-0xfed00fff]
+[    0.049315] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfed01000-0xfed0ffff]
+[    0.049316] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfed10000-0xfed19fff]
+[    0.049316] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfed1a000-0xfed83fff]
+[    0.049317] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfed84000-0xfed84fff]
+[    0.049318] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfed85000-0xfedfffff]
+[    0.049319] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.049319] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xfee01000-0xff9fffff]
+[    0.049320] kernel: kernel/power/snapshot.c __register_nosave_region PM: Registered nosave memory: [mem 0xffa00000-0xffffffff]
+[    0.049322] kernel: arch/x86/kernel/e820.c e820__setup_pci_gap [mem 0x90000000-0xdfffffff] available for PCI devices
+[    0.049323] kernel: Booting paravirtualized kernel on bare hardware
+[    0.049327] kernel: kernel/time/clocksource.c __clocksource_update_freq_scale clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.049329] kernel: init/main.c setup_command_line init/main.c setup_command_line
+[    0.049334] kernel: kernel/smp.c setup_nr_cpu_ids smp: kernel/smp.c setup_nr_cpu_ids
+[    0.049336] kernel: arch/x86/kernel/setup_percpu.c setup_per_cpu_areas setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.049608] kernel: mm/percpu.c pcpu_embed_first_chunk percpu: Embedded 55 pages/cpu s188416 r8192 d28672 u524288
+[    0.049615] kernel: pcpu-alloc: s188416 r8192 d28672 u524288 alloc=1*2097152
+[    0.049616] kernel: pcpu-alloc: [0] 0 1 2 3 
+[    0.049644] kernel: kernel/cpu.c boot_cpu_hotplug_init kernel/cpu.c boot_cpu_hotplug_init
+[    0.049645] kernel: mm/page_alloc.c build_all_zonelists mm/page_alloc.c build_all_zonelists
+[    0.049648] kernel: mm/page_alloc.c build_all_zonelists Built 1 zonelists, mobility grouping on.  Total pages: 2036166
+[    0.049649] kernel: mm/page_alloc.c build_all_zonelists Policy zone: Normal
+[    0.049650] kernel: mm/page_alloc.c page_alloc_init mm/page_alloc.c page_alloc_init
+[    0.049651] kernel: init/main.c start_kernel Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.3.1 root=UUID=0df0ec6d-15f8-47d8-a618-50937a2a0db2 ro quiet splash vt.handoff=7
+[    0.049652] kernel: kernel/jump_label.c jump_label_init kernel/jump_label.c jump_label_init
+[    0.049653] kernel: init/main.c parse_early_param init/main.c parse_early_param
+[    0.049755] kernel: kernel/printk/printk.c setup_log_buf printk: kernel/printk/printk.c setup_log_buf
+[    0.049761] kernel: fs/dcache.c vfs_caches_init_early fs/dcache.c vfs_caches_init_early
+[    0.050589] kernel: mm/page_alloc.c alloc_large_system_hash Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.051038] kernel: mm/page_alloc.c alloc_large_system_hash Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.051040] kernel: kernel/extable.c sort_main_extable kernel/extable.c sort_main_extable
+[    0.051096] kernel: init/main.c mm_init init/main.c mm_init
+[    0.051097] kernel: init/main.c report_meminit mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.058328] kernel: Calgary: detecting Calgary via BIOS EBDA area
+[    0.058330] kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    0.093231] kernel: mm/page_alloc.c mem_init_print_info Memory: 7759636K/8274344K available (14339K kernel code, 2392K rwdata, 4648K rodata, 2672K init, 5048K bss, 514708K reserved, 0K cma-reserved)
+[    0.093378] kernel: mm/slub.c kmem_cache_init SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.093391] kernel: arch/x86/mm/pti.c pti_init Kernel/User page tables isolation: enabled
+[    0.093409] kernel: kernel/trace/ftrace.c ftrace_init kernel/trace/ftrace.c ftrace_init
+[    0.093411] kernel: kernel/trace/ftrace.c ftrace_init ftrace: allocating 42786 entries in 168 pages
+[    0.113304] kernel: kernel/trace/trace.c early_trace_init kernel/trace/trace.c early_trace_init
+[    0.113345] kernel: kernel/sched/core.c sched_init kernel/sched/core.c sched_init
+[    0.113370] kernel: lib/radix-tree.c radix_tree_init lib/radix-tree.c radix_tree_init
+[    0.113373] kernel: kernel/sched/isolation.c housekeeping_init kernel/sched/isolation.c housekeeping_init
+[    0.113374] kernel: kernel/workqueue.c workqueue_init_early kernel/workqueue.c workqueue_init_early
+[    0.113402] kernel: kernel/rcu/tree.c rcu_init rcu: kernel/rcu/tree.c rcu_init
+[    0.113403] kernel: kernel/rcu/tree_plugin.h rcu_bootup_announce rcu: Hierarchical RCU implementation.
+[    0.113404] kernel: kernel/rcu/tree_plugin.h rcu_bootup_announce_oddness rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+[    0.113405] kernel: kernel/rcu/update.c rcu_tasks_bootup_oddness         Tasks RCU enabled.
+[    0.113406] kernel: kernel/rcu/tree.c adjust_jiffies_till_sched_qs rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.113407] kernel: kernel/rcu/tree.c rcu_init_geometry rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.113412] kernel: kernel/trace/trace.c trace_init kernel/trace/trace.c trace_init
+[    0.116889] kernel: kernel/irq/irqdesc.c early_irq_init kernel/irq/irqdesc.c early_irq_init
+[    0.116907] kernel: NR_IRQS: 524544, nr_irqs: 1024, preallocated irqs: 16
+[    0.117143] kernel: kernel/time/tick-common.c tick_init kernel/time/tick-common.c tick_init
+[    0.117144] kernel: kernel/time/timer.c init_timers kernel/time/timer.c init_timers
+[    0.117146] kernel: kernel/time/hrtimer.c hrtimers_init kernel/time/hrtimer.c hrtimers_init
+[    0.117147] kernel: kernel/softirq.c softirq_init softirq: kernel/softirq.c softirq_init
+[    0.117148] kernel: kernel/time/timekeeping.c timekeeping_init kernel/time/timekeeping.c timekeeping_init
+[    0.117246] kernel: drivers/char/random.c rand_initialize drivers/char/random.c rand_initialize
+[    0.117312] kernel: drivers/char/random.c crng_initialize random: crng done (trusting CPU's manufacturer)
+[    0.117320] kernel: kernel/printk/printk_safe.c printk_safe_init kernel/printk/printk_safe.c printk_safe_init
+[    0.117322] kernel: kernel/events/core.c perf_event_init kernel/events/core.c perf_event_init
+[    0.117332] kernel: kernel/profile.c profile_init kernel/profile.c profile_init
+[    0.117333] kernel: kernel/smp.c call_function_init smp: kernel/smp.c call_function_init
+[    0.117335] kernel: kernel/printk/printk.c console_init printk: kernel/printk/printk.c console_init
+[    0.117347] kernel: drivers/tty/vt/vt.c con_init Console: colour dummy device 80x25
+[    0.117358] kernel: kernel/printk/printk.c register_console printk: console [tty0] enabled
+[    0.117365] kernel: arch/x86/mm/mem_encrypt.c mem_encrypt_init arch/x86/mm/mem_encrypt.c mem_encrypt_init
+[    0.117365] kernel: mm/page_alloc.c setup_per_cpu_pageset mm/page_alloc.c setup_per_cpu_pageset
+[    0.117370] kernel: mm/mempolicy.c numa_policy_init mempolicy: mm/mempolicy.c numa_policy_init
+[    0.117379] kernel: drivers/acpi/bus.c acpi_early_init drivers/acpi/bus.c acpi_early_init
+[    0.117380] kernel: ACPI: Core revision 20190703
+[    0.117775] kernel: kernel/time/clocksource.c __clocksource_update_freq_scale clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+[    0.117855] kernel: arch/x86/kernel/apic/apic.c apic_intr_mode_init APIC: Switch to symmetric I/O mode setup
+[    0.117858] kernel: drivers/iommu/dmar.c parse_dmar_table DMAR: Host address width 39
+[    0.117859] kernel: drivers/iommu/dmar.c dmar_table_print_dmar_entry DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.117867] kernel: drivers/iommu/dmar.c alloc_iommu DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 7e3ff0505e
+[    0.117869] kernel: drivers/iommu/dmar.c dmar_table_print_dmar_entry DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.117873] kernel: drivers/iommu/dmar.c alloc_iommu DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.117874] kernel: drivers/iommu/dmar.c dmar_table_print_dmar_entry DMAR: RMRR base: 0x0000008aa29000 end: 0x0000008aa48fff
+[    0.117875] kernel: drivers/iommu/dmar.c dmar_table_print_dmar_entry DMAR: RMRR base: 0x0000008b800000 end: 0x0000008fffffff
+[    0.117877] kernel: drivers/iommu/dmar.c dmar_parse_one_andd DMAR: ANDD device: 1 name: \_SB.PCI0.I2C0
+[    0.117877] kernel: drivers/iommu/dmar.c dmar_parse_one_andd DMAR: ANDD device: 2 name: \_SB.PCI0.I2C1
+[    0.117880] kernel: drivers/iommu/intel_irq_remapping.c ir_parse_one_ioapic_scope DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.117881] kernel: drivers/iommu/intel_irq_remapping.c ir_parse_one_hpet_scope DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.117882] kernel: drivers/iommu/intel_irq_remapping.c intel_prepare_irq_remapping DMAR-IR: x2apic is disabled because BIOS sets x2apic opt out bit.
+[    0.117882] kernel: drivers/iommu/intel_irq_remapping.c intel_prepare_irq_remapping DMAR-IR: Use 'intremap=no_x2apic_optout' to override the BIOS setting.
+[    0.119703] kernel: drivers/iommu/intel_irq_remapping.c intel_enable_irq_remapping DMAR-IR: Enabled IRQ remapping in xapic mode
+[    0.119704] kernel: arch/x86/kernel/apic/apic.c try_to_enable_x2apic x2apic: IRQ remapping doesn't support X2APIC mode
+[    0.123822] kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.141827] kernel: kernel/time/clocksource.c __clocksource_update_freq_scale clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x22983777dd9, max_idle_ns: 440795300422 ns
+[    0.141830] kernel: kernel/sched/clock.c sched_clock_init kernel/sched/clock.c sched_clock_init
+[    0.141833] kernel: init/calibrate.c calibrate_delay Calibrating delay loop (skipped), value calculated using timer frequency.. 4800.00 BogoMIPS (lpj=9600000)
+[    0.141835] kernel: kernel/pid.c pid_idr_init kernel/pid.c pid_idr_init
+[    0.141837] kernel: kernel/pid.c pid_idr_init pid_max: default: 32768 minimum: 301
+[    0.141842] kernel: mm/rmap.c anon_vma_init mm/rmap.c anon_vma_init
+[    0.141847] kernel: arch/x86/platform/efi/efi.c efi_enter_virtual_mode efi: arch/x86/platform/efi/efi.c efi_enter_virtual_mode
+[    0.149840] kernel: init/main.c thread_stack_cache_init init/main.c thread_stack_cache_init
+[    0.149842] kernel: kernel/cred.c cred_init kernel/cred.c cred_init
+[    0.149857] kernel: kernel/fork.c fork_init kernel/fork.c fork_init
+[    0.149862] kernel: kernel/fork.c proc_caches_init kernel/fork.c proc_caches_init
+[    0.149879] kernel: kernel/utsname.c uts_ns_init kernel/utsname.c uts_ns_init
+[    0.149882] kernel: fs/buffer.c buffer_init fs/buffer.c buffer_init
+[    0.149886] kernel: security/keys/key.c key_init security/keys/key.c key_init
+[    0.149888] kernel: security/security.c security_init LSM: security/security.c security_init
+[    0.149889] kernel: security/security.c security_init LSM: Security Framework initializing
+[    0.149901] kernel: security/yama/yama_lsm.c yama_init Yama: becoming mindful.
+[    0.149922] kernel: AppArmor: AppArmor initialized
+[    0.149923] kernel: kernel/debug/debug_core.c dbg_late_init KGDB: kernel/debug/debug_core.c dbg_late_init
+[    0.149946] kernel: fs/dcache.c vfs_caches_init fs/dcache.c vfs_caches_init
+[    0.149976] kernel: mm/page_alloc.c alloc_large_system_hash Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.149994] kernel: mm/page_alloc.c alloc_large_system_hash Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.150057] kernel: mm/filemap.c pagecache_init mm/filemap.c pagecache_init
+[    0.150062] kernel: kernel/signal.c signals_init kernel/signal.c signals_init
+[    0.150064] kernel: fs/seq_file.c seq_file_init fs/seq_file.c seq_file_init
+[    0.150065] kernel: fs/proc/root.c proc_root_init fs/proc/root.c proc_root_init
+[    0.150182] kernel: fs/nsfs.c nsfs_init fs/nsfs.c nsfs_init
+[    0.150188] kernel: kernel/cgroup/cpuset.c cpuset_init kernel/cgroup/cpuset.c cpuset_init
+[    0.150190] kernel: kernel/cgroup/cgroup.c cgroup_init cgroup: kernel/cgroup/cgroup.c cgroup_init
+[    0.150237] kernel: kernel/taskstats.c taskstats_init_early kernel/taskstats.c taskstats_init_early
+[    0.150242] kernel: kernel/delayacct.c delayacct_init kernel/delayacct.c delayacct_init
+[    0.150249] kernel: arch/x86/mm/init.c poking_init arch/x86/mm/init.c poking_init
+[    0.150258] kernel: init/main.c start_kernel init/main.c start_kernel
+[    0.150300] kernel: mce: CPU0: Thermal monitoring enabled (TM1)
+[    0.150319] kernel: arch/x86/kernel/process.c select_idle_routine process: using mwait in idle threads
+[    0.150323] kernel: arch/x86/kernel/cpu/common.c cpu_detect_tlb Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.150324] kernel: arch/x86/kernel/cpu/common.c cpu_detect_tlb Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.150327] kernel: arch/x86/kernel/cpu/bugs.c spectre_v1_select_mitigation Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.150329] kernel: arch/x86/kernel/cpu/bugs.c spectre_v2_select_mitigation Spectre V2 : Mitigation: Full generic retpoline
+[    0.150330] kernel: arch/x86/kernel/cpu/bugs.c spectre_v2_select_mitigation Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.150330] kernel: arch/x86/kernel/cpu/bugs.c spectre_v2_select_mitigation Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.150332] kernel: arch/x86/kernel/cpu/bugs.c spectre_v2_user_select_mitigation Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.150333] kernel: arch/x86/kernel/cpu/bugs.c spectre_v2_user_select_mitigation Spectre V2 : User space: Mitigation: STIBP via seccomp and prctl
+[    0.150334] kernel: arch/x86/kernel/cpu/bugs.c ssb_select_mitigation Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[    0.150338] kernel: arch/x86/kernel/cpu/bugs.c mds_select_mitigation MDS: Mitigation: Clear CPU buffers
+[    0.150652] kernel: mm/page_alloc.c free_reserved_area Freeing SMP alternatives memory: 36K
+[    0.152874] kernel: drivers/acpi/bus.c acpi_subsystem_init drivers/acpi/bus.c acpi_subsystem_init
+[    0.153844] kernel: arch/x86/kernel/process.c arch_post_acpi_subsys_init process: arch/x86/kernel/process.c arch_post_acpi_subsys_init
+[    0.153845] kernel: drivers/sfi/sfi_core.c sfi_init_late SFI: drivers/sfi/sfi_core.c sfi_init_late
+[    0.153846] kernel: init/main.c rest_init init/main.c rest_init
+[    0.153913] kernel: init/main.c kernel_init init/main.c kernel_init
+[    0.153941] kernel: TSC deadline timer enabled
+[    0.153946] kernel: arch/x86/kernel/smpboot.c native_smp_prepare_cpus smpboot: CPU0: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz (family: 0x6, model: 0x4e, stepping: 0x3)
+[    0.154059] kernel: arch/x86/events/core.c init_hw_perf_events Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[    0.154065] kernel: arch/x86/events/core.c init_hw_perf_events ... version:                4
+[    0.154066] kernel: arch/x86/events/core.c init_hw_perf_events ... bit width:              48
+[    0.154067] kernel: arch/x86/events/core.c init_hw_perf_events ... generic registers:      4
+[    0.154068] kernel: arch/x86/events/core.c init_hw_perf_events ... value mask:             0000ffffffffffff
+[    0.154069] kernel: arch/x86/events/core.c init_hw_perf_events ... max period:             00007fffffffffff
+[    0.154069] kernel: arch/x86/events/core.c init_hw_perf_events ... fixed-purpose events:   3
+[    0.154070] kernel: arch/x86/events/core.c init_hw_perf_events ... event mask:             000000070000000f
+[    0.154116] kernel: kernel/rcu/srcutree.c srcu_bootup_announce rcu: Hierarchical SRCU implementation.
+[    0.155136] kernel: kernel/watchdog_hld.c hardlockup_detector_perf_enable NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.155194] kernel: kernel/smp.c smp_init smp: Bringing up secondary CPUs ...
+[    0.155284] kernel: [81B blob data]
+[    0.155286] kernel: [72B blob data]
+[    0.155286] kernel: arch/x86/kernel/smpboot.c announce_cpu smpboot:    
+[    0.155287] kernel: arch/x86/kernel/smpboot.c announce_cpu smpboot:  #1
+[    0.000586] kernel: kernel/sched/idle.c cpu_startup_entry kernel/sched/idle.c cpu_startup_entry
+[    0.000586] kernel: kernel/sched/idle.c do_idle do_idle_times: 0
+[    0.158068] kernel: kernel/sched/idle.c cpu_startup_entry kernel/sched/idle.c cpu_startup_entry
+[    0.158069] kernel: arch/x86/kernel/smpboot.c announce_cpu smpboot:  #2
+[    0.000586] kernel: kernel/sched/idle.c cpu_startup_entry kernel/sched/idle.c cpu_startup_entry
+[    0.158425] kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+[    0.158425] kernel: arch/x86/kernel/smpboot.c announce_cpu smpboot:  #3
+[    0.000586] kernel: kernel/sched/idle.c cpu_startup_entry kernel/sched/idle.c cpu_startup_entry
+[    0.158445] kernel: kernel/smp.c smp_init smp: Brought up 1 node, 4 CPUs
+[    0.158445] kernel: arch/x86/kernel/smpboot.c calculate_max_logical_packages smpboot: Max logical packages: 1
+[    0.158445] kernel: arch/x86/kernel/smpboot.c impress_friends smpboot: Total of 4 processors activated (19200.00 BogoMIPS)
+[    0.159894] kernel: devtmpfs: initialized
+[    0.159894] kernel: arch/x86/mm/init_64.c probe_memory_block_size x86/mm: Memory block size: 128MB
+[    0.162562] kernel: drivers/acpi/nvs.c suspend_nvs_register PM: Registering ACPI NVS region [mem 0x73e42000-0x73e42fff] (4096 bytes)
+[    0.162562] kernel: drivers/acpi/nvs.c suspend_nvs_register PM: Registering ACPI NVS region [mem 0x8aafe000-0x8adfdfff] (3145728 bytes)
+[    0.162562] kernel: kernel/time/clocksource.c __clocksource_update_freq_scale clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.162562] kernel: mm/page_alloc.c alloc_large_system_hash futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.162562] kernel: drivers/pinctrl/core.c pinctrl_init pinctrl core: initialized pinctrl subsystem
+[    0.162562] kernel: drivers/base/power/trace.c read_magic_time PM: RTC time: 13:39:01, date: 2019-11-10
+[    0.162562] kernel: net/socket.c sock_register NET: Registered protocol family 16
+[    0.162562] kernel: kernel/audit.c audit_init audit: initializing netlink subsys (disabled)
+[    0.162562] kernel: kernel/audit.c kauditd_printk_skb audit: type=2000 audit(1573393141.048:1): state=initialized audit_enabled=0 res=1
+[    0.162562] kernel: EISA bus registered
+[    0.162562] kernel: cpuidle: using governor ladder
+[    0.162562] kernel: kernel/sched/idle.c do_idle do_idle_times: 50
+[    0.162562] kernel: cpuidle: using governor menu
+[    0.162562] kernel: Simple Boot Flag at 0x44 set to 0x1
+[    0.162562] kernel: drivers/pci/pci-acpi.c acpi_pci_init ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.162562] kernel: ACPI: bus type PCI registered
+[    0.162562] kernel: drivers/pci/hotplug/acpiphp_core.c acpiphp_init acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.162562] kernel: arch/x86/pci/mmconfig-shared.c pci_mmconfig_add PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+[    0.162562] kernel: arch/x86/pci/mmconfig-shared.c is_mmconf_reserved PCI: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+[    0.162562] kernel: pmd_set_huge: Cannot satisfy [mem 0xe0000000-0xe0200000] with a huge-page mapping due to MTRR override.
+[    0.162562] kernel: PCI: Using configuration type 1 for base access
+[    0.162585] kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.165865] kernel: mm/hugetlb.c report_hugepages HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.165865] kernel: mm/hugetlb.c report_hugepages HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 100
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 150
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 200
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 250
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 300
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 350
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 400
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 450
+[    0.165883] kernel: kernel/sched/idle.c do_idle do_idle_times: 500
+[    0.165925] kernel: drivers/acpi/osi.c acpi_osi_setup_late ACPI: Added _OSI(Module Device)
+[    0.165926] kernel: drivers/acpi/osi.c acpi_osi_setup_late ACPI: Added _OSI(Processor Device)
+[    0.165927] kernel: drivers/acpi/osi.c acpi_osi_setup_late ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.165928] kernel: drivers/acpi/osi.c acpi_osi_setup_late ACPI: Added _OSI(Processor Aggregator Device)
+[    0.165930] kernel: drivers/acpi/osi.c acpi_osi_setup_late ACPI: Added _OSI(Linux-Dell-Video)
+[    0.165931] kernel: drivers/acpi/osi.c acpi_osi_setup_late ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.165932] kernel: drivers/acpi/osi.c acpi_osi_setup_late ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.221136] kernel: ACPI: 11 ACPI AML tables successfully acquired and loaded
+[    0.225650] kernel: ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    0.281118] kernel: ACPI: Dynamic OEM Table Load:
+[    0.281135] kernel: ACPI: SSDT 0xFFFF8993652F8000 00061E (v02 PmRef  Cpu0Ist  00003000 INTL 20130117)
+[    0.283397] kernel: ACPI: \_PR_.CPU0: _OSC native thermal LVT Acked
+[    0.285581] kernel: ACPI: Dynamic OEM Table Load:
+[    0.285590] kernel: ACPI: SSDT 0xFFFF899364C60000 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20130117)
+[    0.287704] kernel: ACPI: Dynamic OEM Table Load:
+[    0.287711] kernel: ACPI: SSDT 0xFFFF899364FA8CC0 00008E (v02 PmRef  Cpu0Hwp  00003000 INTL 20130117)
+[    0.289650] kernel: ACPI: Dynamic OEM Table Load:
+[    0.289656] kernel: ACPI: SSDT 0xFFFF899364802000 000130 (v02 PmRef  HwpLvt   00003000 INTL 20130117)
+[    0.292674] kernel: ACPI: Dynamic OEM Table Load:
+[    0.292683] kernel: ACPI: SSDT 0xFFFF8993652FF800 0005AA (v02 PmRef  ApIst    00003000 INTL 20130117)
+[    0.295226] kernel: ACPI: Dynamic OEM Table Load:
+[    0.295233] kernel: ACPI: SSDT 0xFFFF899364803A00 000119 (v02 PmRef  ApHwp    00003000 INTL 20130117)
+[    0.297300] kernel: ACPI: Dynamic OEM Table Load:
+[    0.297307] kernel: ACPI: SSDT 0xFFFF899364803E00 000119 (v02 PmRef  ApCst    00003000 INTL 20130117)
+[    0.302536] kernel: drivers/acpi/ec.c acpi_ec_start ACPI: EC: EC started
+[    0.302537] kernel: drivers/acpi/ec.c acpi_ec_enter_noirq ACPI: EC: interrupt blocked
+[    0.306059] kernel: ACPI: \_SB_.PCI0.LPCB.H_EC: Used as first EC
+[    0.306062] kernel: ACPI: \_SB_.PCI0.LPCB.H_EC: GPE=0x23, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.306063] kernel: ACPI: \_SB_.PCI0.LPCB.H_EC: Boot DSDT EC used to handle transactions
+[    0.306063] kernel: ACPI: Interpreter enabled
+[    0.306122] kernel: drivers/acpi/sleep.c acpi_sleep_init ACPI: (supports S0 S3 S4 S5)
+[    0.306124] kernel: ACPI: Using IOAPIC for interrupt routing
+[    0.306175] kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.307201] kernel: ACPI: Enabled 8 GPEs in block 00 to 7F
+[    0.339003] kernel: ACPI: Power Resource [FN00] (on)
+[    0.340663] kernel: drivers/acpi/pci_root.c acpi_pci_root_add ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+[    0.340670] kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    0.340728] kernel: acpi PNP0A08:00: _OSC failed (AE_ERROR); disabling ASPM
+[    0.343536] kernel: drivers/pci/probe.c pci_register_host_bridge PCI host bridge to bus 0000:00
+[    0.343538] kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.343540] kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.343541] kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.343542] kernel: pci_bus 0000:00: root bus resource [mem 0x90000000-0xdfffffff window]
+[    0.343543] kernel: pci_bus 0000:00: root bus resource [mem 0xfd000000-0xfe7fffff window]
+[    0.343545] kernel: pci_bus 0000:00: root bus resource [bus 00-fe]
+[    0.343558] kernel: pci 0000:00:00.0: [8086:1904] type 00 class 0x060000
+[    0.344554] kernel: pci 0000:00:02.0: [8086:1916] type 00 class 0x030000
+[    0.344568] kernel: pci 0000:00:02.0: reg 0x10: [mem 0xb1000000-0xb1ffffff 64bit]
+[    0.344576] kernel: pci 0000:00:02.0: reg 0x18: [mem 0xa0000000-0xafffffff 64bit pref]
+[    0.344581] kernel: pci 0000:00:02.0: reg 0x20: [io  0x5000-0x503f]
+[    0.344600] kernel: pci 0000:00:02.0: BAR 2: assigned to efifb
+[    0.345606] kernel: pci 0000:00:04.0: [8086:1903] type 00 class 0x118000
+[    0.345622] kernel: pci 0000:00:04.0: reg 0x10: [mem 0xb3220000-0xb3227fff 64bit]
+[    0.346675] kernel: pci 0000:00:08.0: [8086:1911] type 00 class 0x088000
+[    0.346693] kernel: pci 0000:00:08.0: reg 0x10: [mem 0xb3232000-0xb3232fff 64bit]
+[    0.347720] kernel: pci 0000:00:14.0: [8086:9d2f] type 00 class 0x0c0330
+[    0.347746] kernel: pci 0000:00:14.0: reg 0x10: [mem 0xb3200000-0xb320ffff 64bit]
+[    0.347823] kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.348925] kernel: pci 0000:00:14.2: [8086:9d31] type 00 class 0x118000
+[    0.348951] kernel: pci 0000:00:14.2: reg 0x10: [mem 0xb3233000-0xb3233fff 64bit]
+[    0.350079] kernel: pci 0000:00:15.0: [8086:9d60] type 00 class 0x118000
+[    0.350343] kernel: pci 0000:00:15.0: reg 0x10: [mem 0xb3234000-0xb3234fff 64bit]
+[    0.352262] kernel: pci 0000:00:15.1: [8086:9d61] type 00 class 0x118000
+[    0.352526] kernel: pci 0000:00:15.1: reg 0x10: [mem 0xb3235000-0xb3235fff 64bit]
+[    0.354381] kernel: pci 0000:00:16.0: [8086:9d3a] type 00 class 0x078000
+[    0.354412] kernel: pci 0000:00:16.0: reg 0x10: [mem 0xb3236000-0xb3236fff 64bit]
+[    0.354495] kernel: pci 0000:00:16.0: PME# supported from D3hot
+[    0.355515] kernel: pci 0000:00:17.0: [8086:9d03] type 00 class 0x010601
+[    0.355539] kernel: pci 0000:00:17.0: reg 0x10: [mem 0xb3230000-0xb3231fff]
+[    0.355548] kernel: pci 0000:00:17.0: reg 0x14: [mem 0xb3239000-0xb32390ff]
+[    0.355557] kernel: pci 0000:00:17.0: reg 0x18: [io  0x5080-0x5087]
+[    0.355566] kernel: pci 0000:00:17.0: reg 0x1c: [io  0x5088-0x508b]
+[    0.355576] kernel: pci 0000:00:17.0: reg 0x20: [io  0x5060-0x507f]
+[    0.355585] kernel: pci 0000:00:17.0: reg 0x24: [mem 0xb3237000-0xb32377ff]
+[    0.355637] kernel: pci 0000:00:17.0: PME# supported from D3hot
+[    0.356658] kernel: pci 0000:00:1c.0: [8086:9d12] type 01 class 0x060400
+[    0.356766] kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.357846] kernel: pci 0000:00:1c.4: [8086:9d14] type 01 class 0x060400
+[    0.357950] kernel: pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+[    0.359024] kernel: pci 0000:00:1d.0: [8086:9d18] type 01 class 0x060400
+[    0.359125] kernel: pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.360214] kernel: pci 0000:00:1f.0: [8086:9d48] type 00 class 0x060100
+[    0.361336] kernel: pci 0000:00:1f.2: [8086:9d21] type 00 class 0x058000
+[    0.361356] kernel: pci 0000:00:1f.2: reg 0x10: [mem 0xb322c000-0xb322ffff]
+[    0.362412] kernel: pci 0000:00:1f.3: [8086:9d70] type 00 class 0x040300
+[    0.362445] kernel: pci 0000:00:1f.3: reg 0x10: [mem 0xb3228000-0xb322bfff 64bit]
+[    0.362480] kernel: pci 0000:00:1f.3: reg 0x20: [mem 0xb3210000-0xb321ffff 64bit]
+[    0.362538] kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.363618] kernel: pci 0000:00:1f.4: [8086:9d23] type 00 class 0x0c0500
+[    0.363680] kernel: pci 0000:00:1f.4: reg 0x10: [mem 0xb3238000-0xb32380ff 64bit]
+[    0.363750] kernel: pci 0000:00:1f.4: reg 0x20: [io  0x5040-0x505f]
+[    0.365128] kernel: pci 0000:01:00.0: [8086:095a] type 00 class 0x028000
+[    0.365232] kernel: pci 0000:01:00.0: reg 0x10: [mem 0xb3100000-0xb3101fff 64bit]
+[    0.365678] kernel: pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    0.366280] kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.366285] kernel: pci 0000:00:1c.0:   bridge window [mem 0xb3100000-0xb31fffff]
+[    0.366467] kernel: pci 0000:02:00.0: [10ec:522a] type 00 class 0xff0000
+[    0.366497] kernel: pci 0000:02:00.0: reg 0x10: [mem 0xb2000000-0xb2000fff]
+[    0.366646] kernel: pci 0000:02:00.0: supports D1 D2
+[    0.366647] kernel: pci 0000:02:00.0: PME# supported from D1 D2 D3hot D3cold
+[    0.366896] kernel: pci 0000:00:1c.4: PCI bridge to [bus 02-07]
+[    0.366899] kernel: pci 0000:00:1c.4:   bridge window [io  0x4000-0x4fff]
+[    0.366902] kernel: pci 0000:00:1c.4:   bridge window [mem 0xb2000000-0xb2ffffff]
+[    0.366906] kernel: pci 0000:00:1c.4:   bridge window [mem 0xb0000000-0xb0ffffff 64bit pref]
+[    0.367044] kernel: pci 0000:08:00.0: [144d:a802] type 00 class 0x010802
+[    0.367074] kernel: pci 0000:08:00.0: reg 0x10: [mem 0xb3000000-0xb3003fff 64bit]
+[    0.367083] kernel: pci 0000:08:00.0: reg 0x18: [io  0x3000-0x30ff]
+[    0.367309] kernel: pci 0000:00:1d.0: PCI bridge to [bus 08]
+[    0.367312] kernel: pci 0000:00:1d.0:   bridge window [io  0x3000-0x3fff]
+[    0.367315] kernel: pci 0000:00:1d.0:   bridge window [mem 0xb3000000-0xb30fffff]
+[    0.369758] kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.369845] kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 *10 11 12 14 15)
+[    0.369935] kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.370025] kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.370114] kernel: ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.370200] kernel: ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.370292] kernel: ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.370380] kernel: ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.371200] kernel: drivers/acpi/ec.c acpi_ec_leave_noirq ACPI: EC: interrupt unblocked
+[    0.371224] kernel: drivers/acpi/ec.c __acpi_ec_enable_event ACPI: EC: event unblocked
+[    0.371261] kernel: ACPI: \_SB_.PCI0.LPCB.H_EC: GPE=0x23, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.371262] kernel: ACPI: \_SB_.PCI0.LPCB.H_EC: Boot DSDT EC used to handle transactions and events
+[    0.371371] kernel: kernel/sched/idle.c do_idle do_idle_times: 550
+[    0.371368] kernel: kernel/sched/idle.c do_idle do_idle_times: 550
+[    0.371373] kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.371373] kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.371373] kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.371373] kernel: drivers/gpu/vga/vgaarb.c vga_arb_device_init vgaarb: loaded
+[    0.373984] kernel: SCSI subsystem initialized
+[    0.374014] kernel: libata version 3.00 loaded.
+[    0.374014] kernel: ACPI: bus type USB registered
+[    0.374014] kernel: drivers/usb/core/driver.c usb_register_driver usbcore: registered new interface driver usbfs
+[    0.374014] kernel: drivers/usb/core/driver.c usb_register_driver usbcore: registered new interface driver hub
+[    0.374014] kernel: drivers/usb/core/driver.c usb_register_device_driver usbcore: registered new device driver usb
+[    0.374014] kernel: drivers/pps/pps.c pps_init pps_core: LinuxPPS API ver. 1 registered
+[    0.374014] kernel: drivers/pps/pps.c pps_init pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.374014] kernel: drivers/ptp/ptp_clock.c ptp_init PTP clock support registered
+[    0.374014] kernel: EDAC MC: Ver: 3.0.0
+[    0.374301] kernel: drivers/firmware/efi/vars.c efivars_register Registered efivars operations
+[    0.378251] kernel: kernel/sched/idle.c do_idle do_idle_times: 600
+[    0.386309] kernel: kernel/sched/idle.c do_idle do_idle_times: 650
+[    0.398276] kernel: kernel/sched/idle.c do_idle do_idle_times: 700
+[    0.430210] kernel: kernel/sched/idle.c do_idle do_idle_times: 750
+[    0.434270] kernel: PCI: Using ACPI for IRQ routing
+[    0.462731] kernel: PCI: pci_cache_line_size set to 64 bytes
+[    0.463416] kernel: e820: reserve RAM buffer [mem 0x00058000-0x0005ffff]
+[    0.463418] kernel: e820: reserve RAM buffer [mem 0x00088000-0x0008ffff]
+[    0.463418] kernel: e820: reserve RAM buffer [mem 0x73e42000-0x73ffffff]
+[    0.463419] kernel: e820: reserve RAM buffer [mem 0x8a10e000-0x8bffffff]
+[    0.463421] kernel: e820: reserve RAM buffer [mem 0x8aeff000-0x8bffffff]
+[    0.463421] kernel: e820: reserve RAM buffer [mem 0x26f000000-0x26fffffff]
+[    0.463540] kernel: NetLabel: Initializing
+[    0.463540] kernel: NetLabel:  domain hash size = 128
+[    0.463541] kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.463555] kernel: NetLabel:  unlabeled traffic allowed by default
+[    0.463571] kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    0.463571] kernel: hpet0: 8 comparators, 64-bit 24.000000 MHz counter
+[    0.466865] kernel: kernel/time/clocksource.c __clocksource_select clocksource: Switched to clocksource tsc-early
+[    0.479123] kernel: VFS: Disk quotas dquot_6.6.0
+[    0.479139] kernel: fs/quota/dquot.c dquot_init VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.479250] kernel: AppArmor: AppArmor Filesystem Enabled
+[    0.479280] kernel: pnp: PnP ACPI init
+[    0.479572] kernel: system 00:00: [mem 0xfd000000-0xfdabffff] has been reserved
+[    0.479573] kernel: system 00:00: [mem 0xfdad0000-0xfdadffff] has been reserved
+[    0.479575] kernel: system 00:00: [mem 0xfdb00000-0xfdffffff] has been reserved
+[    0.479576] kernel: system 00:00: [mem 0xfe000000-0xfe01ffff] has been reserved
+[    0.479577] kernel: system 00:00: [mem 0xfe036000-0xfe03bfff] has been reserved
+[    0.479579] kernel: system 00:00: [mem 0xfe03d000-0xfe3fffff] has been reserved
+[    0.479580] kernel: system 00:00: [mem 0xfe410000-0xfe7fffff] has been reserved
+[    0.479586] kernel: system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.480014] kernel: system 00:01: [io  0x2000-0x20fe] has been reserved
+[    0.480018] kernel: system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.480482] kernel: system 00:02: [io  0x0680-0x069f] has been reserved
+[    0.480483] kernel: system 00:02: [io  0xffff] has been reserved
+[    0.480485] kernel: system 00:02: [io  0xffff] has been reserved
+[    0.480486] kernel: system 00:02: [io  0xffff] has been reserved
+[    0.480487] kernel: system 00:02: [io  0x0500-0x0501] has been reserved
+[    0.480489] kernel: system 00:02: [io  0x1800-0x18fe] has been reserved
+[    0.480490] kernel: system 00:02: [io  0x164e-0x164f] has been reserved
+[    0.480494] kernel: system 00:02: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.480627] kernel: pnp 00:03: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.480676] kernel: system 00:04: [io  0x1854-0x1857] has been reserved
+[    0.480679] kernel: system 00:04: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+[    0.480709] kernel: pnp 00:05: Plug and Play ACPI device, IDs HPQ8001 PNP0303 (active)
+[    0.480736] kernel: pnp 00:06: Plug and Play ACPI device, IDs SYN321e PNP0f13 ETD0000 (active)
+[    0.482462] kernel: system 00:07: [mem 0xfe029000-0xfe029fff] has been reserved
+[    0.482463] kernel: system 00:07: [mem 0xfe028000-0xfe028fff] has been reserved
+[    0.482467] kernel: system 00:07: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.483273] kernel: system 00:08: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.483275] kernel: system 00:08: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.483276] kernel: system 00:08: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.483278] kernel: system 00:08: [mem 0xe0000000-0xefffffff] has been reserved
+[    0.483279] kernel: system 00:08: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.483280] kernel: system 00:08: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.483282] kernel: system 00:08: [mem 0xfed45000-0xfed8ffff] could not be reserved
+[    0.483283] kernel: system 00:08: [mem 0xff000000-0xffffffff] could not be reserved
+[    0.483285] kernel: system 00:08: [mem 0xfee00000-0xfeefffff] could not be reserved
+[    0.483286] kernel: system 00:08: [mem 0x90000000-0x9001ffff] has been reserved
+[    0.483290] kernel: system 00:08: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.483932] kernel: pnp: PnP ACPI: found 9 devices
+[    0.484087] kernel: kernel/sched/idle.c do_idle do_idle_times: 800
+[    0.484484] kernel: kernel/sched/idle.c do_idle do_idle_times: 850
+[    0.484861] kernel: kernel/sched/idle.c do_idle do_idle_times: 900
+[    0.485248] kernel: drivers/thermal/thermal_core.c thermal_register_governors thermal_sys: Registered thermal governor 'fair_share'
+[    0.485249] kernel: drivers/thermal/thermal_core.c thermal_register_governors thermal_sys: Registered thermal governor 'bang_bang'
+[    0.485250] kernel: drivers/thermal/thermal_core.c thermal_register_governors thermal_sys: Registered thermal governor 'step_wise'
+[    0.485251] kernel: drivers/thermal/thermal_core.c thermal_register_governors thermal_sys: Registered thermal governor 'user_space'
+[    0.485252] kernel: drivers/thermal/thermal_core.c thermal_register_governors thermal_sys: Registered thermal governor 'power_allocator'
+[    0.489757] kernel: kernel/time/clocksource.c __clocksource_update_freq_scale clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.489796] kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.489807] kernel: pci 0000:00:1c.0:   bridge window [mem 0xb3100000-0xb31fffff]
+[    0.489816] kernel: pci 0000:00:1c.4: PCI bridge to [bus 02-07]
+[    0.489821] kernel: pci 0000:00:1c.4:   bridge window [io  0x4000-0x4fff]
+[    0.489825] kernel: pci 0000:00:1c.4:   bridge window [mem 0xb2000000-0xb2ffffff]
+[    0.489828] kernel: pci 0000:00:1c.4:   bridge window [mem 0xb0000000-0xb0ffffff 64bit pref]
+[    0.489838] kernel: pci 0000:00:1d.0: PCI bridge to [bus 08]
+[    0.489842] kernel: pci 0000:00:1d.0:   bridge window [io  0x3000-0x3fff]
+[    0.489846] kernel: pci 0000:00:1d.0:   bridge window [mem 0xb3000000-0xb30fffff]
+[    0.489853] kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.489854] kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.489856] kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.489857] kernel: pci_bus 0000:00: resource 7 [mem 0x90000000-0xdfffffff window]
+[    0.489858] kernel: pci_bus 0000:00: resource 8 [mem 0xfd000000-0xfe7fffff window]
+[    0.489859] kernel: pci_bus 0000:01: resource 1 [mem 0xb3100000-0xb31fffff]
+[    0.489861] kernel: pci_bus 0000:02: resource 0 [io  0x4000-0x4fff]
+[    0.489862] kernel: pci_bus 0000:02: resource 1 [mem 0xb2000000-0xb2ffffff]
+[    0.489863] kernel: pci_bus 0000:02: resource 2 [mem 0xb0000000-0xb0ffffff 64bit pref]
+[    0.489864] kernel: pci_bus 0000:08: resource 0 [io  0x3000-0x3fff]
+[    0.489865] kernel: pci_bus 0000:08: resource 1 [mem 0xb3000000-0xb30fffff]
+[    0.490093] kernel: net/socket.c sock_register NET: Registered protocol family 2
+[    0.490221] kernel: mm/page_alloc.c alloc_large_system_hash tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.490236] kernel: mm/page_alloc.c alloc_large_system_hash TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.490329] kernel: mm/page_alloc.c alloc_large_system_hash TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.490559] kernel: net/ipv4/tcp.c tcp_init TCP: Hash tables configured (established 65536 bind 65536)
+[    0.490586] kernel: mm/page_alloc.c alloc_large_system_hash UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.490614] kernel: mm/page_alloc.c alloc_large_system_hash UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.490701] kernel: net/socket.c sock_register NET: Registered protocol family 1
+[    0.490706] kernel: net/socket.c sock_register NET: Registered protocol family 44
+[    0.490718] kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.493054] kernel: drivers/pci/quirks.c pci_apply_final_quirks PCI: CLS 64 bytes, default 64
+[    0.493092] kernel: Trying to unpack rootfs image as initramfs...
+[    0.513857] kernel: kernel/sched/idle.c do_idle do_idle_times: 950
+[    0.707860] kernel: mm/page_alloc.c free_reserved_area Freeing initrd memory: 73724K
+[    0.708010] kernel: drivers/iommu/dmar.c dmar_acpi_insert_dev_scope DMAR: ACPI device "device:70" under DMAR at fed91000 as 00:15.0
+[    0.708014] kernel: drivers/iommu/dmar.c dmar_acpi_insert_dev_scope DMAR: ACPI device "device:71" under DMAR at fed91000 as 00:15.1
+[    0.725886] kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.725888] kernel: kernel/dma/swiotlb.c swiotlb_print_info software IO TLB: mapped [mem 0x7d5b7000-0x815b7000] (64MB)
+[    0.726140] kernel: arch/x86/kernel/check.c start_periodic_check_for_corruption check: Scanning for low memory corruption every 60 seconds
+[    0.726220] kernel: kernel/sched/idle.c do_idle do_idle_times: 1000
+[    0.728305] kernel: certs/system_keyring.c system_trusted_keyring_init Initialise system trusted keyrings
+[    0.728315] kernel: security/keys/key.c register_key_type Key type blacklist registered
+[    0.728348] kernel: mm/workingset.c workingset_init workingset: timestamp_bits=36 max_order=21 bucket_order=0
+[    0.729872] kernel: mm/zbud.c init_zbud zbud: loaded
+[    0.730306] kernel: fs/squashfs/super.c init_squashfs_fs squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.730482] kernel: fs/fuse/inode.c fuse_init fuse: init (API version 7.31)
+[    0.736258] kernel: security/keys/key.c register_key_type Key type asymmetric registered
+[    0.736260] kernel: crypto/asymmetric_keys/asymmetric_type.c register_asymmetric_key_parser Asymmetric key parser 'x509' registered
+[    0.736268] kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    0.736305] kernel: io scheduler mq-deadline registered
+[    0.737292] kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.737373] kernel: efifb: probing for efifb
+[    0.737404] kernel: drivers/video/fbdev/efifb.c efifb_probe efifb: framebuffer at 0xa0000000, using 8128k, total 8128k
+[    0.737405] kernel: drivers/video/fbdev/efifb.c efifb_probe efifb: mode is 1920x1080x32, linelength=7680, pages=1
+[    0.737406] kernel: drivers/video/fbdev/efifb.c efifb_probe efifb: scrolling: redraw
+[    0.737407] kernel: drivers/video/fbdev/efifb.c efifb_probe efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    0.737495] kernel: drivers/tty/vt/vt.c do_bind_con_driver Console: switching to colour frame buffer device 240x67
+[    0.742037] kernel: drivers/video/fbdev/efifb.c efifb_probe fb0: EFI VGA frame buffer device
+[    0.742047] kernel: intel_idle: MWAIT substates: 0x11142120
+[    0.742048] kernel: intel_idle: v0.4.1 model 0x4E
+[    0.742116] kernel: kernel/sched/idle.c do_idle do_idle_times: 1050
+[    0.742310] kernel: intel_idle: lapic_timer_reliable_states 0xffffffff
+[    0.950173] kernel: ACPI: AC Adapter [AC] (on-line)
+[    0.950312] kernel: drivers/input/input.c input_register_device input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+[    0.950319] kernel: ACPI: Lid Switch [LID0]
+[    0.950349] kernel: drivers/input/input.c input_register_device input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    0.950355] kernel: ACPI: Power Button [PWRB]
+[    0.950390] kernel: drivers/input/input.c input_register_device input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    0.950409] kernel: ACPI: Power Button [PWRF]
+[    0.952804] kernel: thermal LNXTHERM:00: registered as thermal_zone0
+[    0.952806] kernel: drivers/acpi/thermal.c acpi_thermal_add ACPI: Thermal Zone [TZ00] (49 C)
+[    0.952995] kernel: thermal LNXTHERM:01: registered as thermal_zone1
+[    0.952996] kernel: drivers/acpi/thermal.c acpi_thermal_add ACPI: Thermal Zone [TZ01] (0 C)
+[    0.953027] kernel: ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPCB.HEC.LHT], AE_NOT_FOUND (20190703/psargs-330)
+[    0.953078] kernel: 
+                       Initialized Local Variables for Method [_HOT]:
+[    0.953078] kernel:   Local0: 00000000796f72c4 <Obj>           Integer 0000000000000055
+[    0.953083] kernel: No Arguments are initialized for method [_HOT]
+[    0.953085] kernel: ACPI Error: Aborting method \_TZ.TZ02._HOT due to previous error (AE_NOT_FOUND) (20190703/psparse-529)
+[    0.953726] kernel: ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPCB.HEC.LHT], AE_NOT_FOUND (20190703/psargs-330)
+[    0.953774] kernel: 
+                       Initialized Local Variables for Method [_HOT]:
+[    0.953774] kernel:   Local0: 000000001ccbb2a8 <Obj>           Integer 0000000000000055
+[    0.953778] kernel: No Arguments are initialized for method [_HOT]
+[    0.953780] kernel: ACPI Error: Aborting method \_TZ.TZ02._HOT due to previous error (AE_NOT_FOUND) (20190703/psparse-529)
+[    0.953826] kernel: drivers/acpi/thermal.c acpi_thermal_get_trip_points [Firmware Bug]: No valid trip found
+[    0.954076] kernel: drivers/tty/serial/8250/8250_core.c serial8250_init Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.954659] kernel: kernel/sched/idle.c do_idle do_idle_times: 1100
+[    0.955649] kernel: kernel/sched/idle.c do_idle do_idle_times: 1150
+[    0.955940] kernel: Linux agpgart interface v0.103
+[    0.956134] kernel: drivers/acpi/battery.c acpi_battery_add battery: ACPI: Battery Slot [BAT0] (battery present)
+[    0.957858] kernel: loop: module loaded
+[    0.958095] kernel: drivers/net/phy/mdio_bus.c __mdiobus_register libphy: Fixed MDIO Bus: probed
+[    0.958097] kernel: drivers/net/tun.c tun_init tun: Universal TUN/TAP device driver, 1.6
+[    0.958129] kernel: drivers/net/ppp/ppp_generic.c ppp_init PPP generic driver version 2.4.2
+[    0.958167] kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.958170] kernel: drivers/usb/host/ehci-pci.c ehci_pci_init ehci-pci: EHCI PCI platform driver
+[    0.958181] kernel: drivers/usb/host/ehci-platform.c ehci_platform_init ehci-platform: EHCI generic platform driver
+[    0.958193] kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.958195] kernel: drivers/usb/host/ohci-pci.c ohci_pci_init ohci-pci: OHCI PCI platform driver
+[    0.958204] kernel: drivers/usb/host/ohci-platform.c ohci_platform_init ohci-platform: OHCI generic platform driver
+[    0.958212] kernel: uhci_hcd: USB Universal Host Controller Interface driver
+[    0.958471] kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.958477] kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    0.959569] kernel: xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000081109810
+[    0.959576] kernel: xhci_hcd 0000:00:14.0: cache line size of 64 is not supported
+[    0.959809] kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.03
+[    0.959811] kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.959812] kernel: usb usb1: Product: xHCI Host Controller
+[    0.959813] kernel: usb usb1: Manufacturer: Linux 5.3.1 xhci-hcd
+[    0.959814] kernel: usb usb1: SerialNumber: 0000:00:14.0
+[    0.959911] kernel: hub 1-0:1.0: USB hub found
+[    0.959933] kernel: hub 1-0:1.0: 12 ports detected
+[    0.961578] kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.961582] kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    0.961584] kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.0 SuperSpeed
+[    0.961624] kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.03
+[    0.961625] kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.961626] kernel: usb usb2: Product: xHCI Host Controller
+[    0.961627] kernel: usb usb2: Manufacturer: Linux 5.3.1 xhci-hcd
+[    0.961628] kernel: usb usb2: SerialNumber: 0000:00:14.0
+[    0.961717] kernel: hub 2-0:1.0: USB hub found
+[    0.961734] kernel: hub 2-0:1.0: 6 ports detected
+[    0.962424] kernel: usb: port power management may be unreliable
+[    0.962905] kernel: drivers/input/serio/i8042-x86ia64io.h i8042_pnp_init i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+[    0.971540] kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.971544] kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.971642] kernel: kernel/sched/idle.c do_idle do_idle_times: 1200
+[    0.971644] kernel: drivers/input/mousedev.c mousedev_init mousedev: PS/2 mouse device common for all mice
+[    0.971803] kernel: rtc_cmos 00:03: RTC can wake from S4
+[    0.972277] kernel: rtc_cmos 00:03: registered as rtc0
+[    0.972294] kernel: rtc_cmos 00:03: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+[    0.972310] kernel: i2c /dev entries driver
+[    0.972386] kernel: drivers/md/dm-uevent.c dm_uevent_init device-mapper: uevent: version 1.0.3
+[    0.972442] kernel: drivers/md/dm-ioctl.c dm_interface_init device-mapper: ioctl: 4.40.0-ioctl (2019-01-18) initialised: dm-devel@redhat.com
+[    0.972463] kernel: platform eisa.0: Probing EISA bus 0
+[    0.972464] kernel: platform eisa.0: EISA: Cannot allocate resource for mainboard
+[    0.972466] kernel: platform eisa.0: Cannot allocate resource for EISA slot 1
+[    0.972467] kernel: platform eisa.0: Cannot allocate resource for EISA slot 2
+[    0.972468] kernel: platform eisa.0: Cannot allocate resource for EISA slot 3
+[    0.972469] kernel: platform eisa.0: Cannot allocate resource for EISA slot 4
+[    0.972470] kernel: platform eisa.0: Cannot allocate resource for EISA slot 5
+[    0.972471] kernel: platform eisa.0: Cannot allocate resource for EISA slot 6
+[    0.972472] kernel: platform eisa.0: Cannot allocate resource for EISA slot 7
+[    0.972473] kernel: platform eisa.0: Cannot allocate resource for EISA slot 8
+[    0.972474] kernel: platform eisa.0: EISA: Detected 0 cards
+[    0.972478] kernel: drivers/cpufreq/intel_pstate.c intel_pstate_init intel_pstate: Intel P-state driver initializing
+[    0.972970] kernel: drivers/cpufreq/intel_pstate.c intel_pstate_init intel_pstate: HWP enabled
+[    0.972993] kernel: drivers/leds/trigger/ledtrig-cpu.c ledtrig_cpu_init ledtrig-cpu: registered to indicate activity on CPUs
+[    0.972995] kernel: EFI Variables Facility v0.08 2004-May-17
+[    0.974381] kernel: kernel/sched/idle.c do_idle do_idle_times: 1250
+[    0.979080] kernel: drivers/input/input.c input_register_device input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+[    0.981938] kernel: kernel/sched/idle.c do_idle do_idle_times: 1300
+[    0.981939] kernel: kernel/sched/idle.c do_idle do_idle_times: 1300
+[    0.991408] kernel: kernel/sched/idle.c do_idle do_idle_times: 1350
+[    1.024306] kernel: kernel/sched/idle.c do_idle do_idle_times: 1400
+[    1.032738] kernel: intel_pmc_core INT33A1:00:  initialized
+[    1.033001] kernel: net/socket.c sock_register NET: Registered protocol family 10
+[    1.033102] kernel: kernel/sched/idle.c do_idle do_idle_times: 1450
+[    1.033103] kernel: kernel/sched/idle.c do_idle do_idle_times: 1450
+[    1.041935] kernel: kernel/sched/idle.c do_idle do_idle_times: 1500
+[    1.041936] kernel: kernel/sched/idle.c do_idle do_idle_times: 1500
+[    1.042018] kernel: net/ipv6/seg6.c seg6_init Segment Routing with IPv6
+[    1.042040] kernel: net/socket.c sock_register NET: Registered protocol family 17
+[    1.042220] kernel: security/keys/key.c register_key_type Key type dns_resolver registered
+[    1.042602] kernel: drivers/ras/cec.c cec_init RAS: Correctable Errors collector initialized.
+[    1.042635] kernel: arch/x86/kernel/cpu/microcode/intel.c collect_cpu_info microcode: sig=0x406e3, pf=0x80, revision=0xcc
+[    1.042749] kernel: arch/x86/kernel/cpu/microcode/core.c microcode_init microcode: Microcode Update Driver: v2.2.
+[    1.042758] kernel: sched_clock: Marking stable (1046135389, -3413555)->(1057441178, -14719344)
+[    1.043069] kernel: kernel/taskstats.c taskstats_init registered taskstats version 1
+[    1.043079] kernel: certs/system_keyring.c load_system_certificate_list Loading compiled-in X.509 certificates
+[    1.044845] kernel: certs/system_keyring.c load_system_certificate_list Loaded X.509 cert 'Build time autogenerated kernel key: 01fd9184ae5a241eb053ada6491c6c84036531d8'
+[    1.044870] kernel: mm/zswap.c init_zswap zswap: loaded using pool lzo/zbud
+[    1.047441] kernel: kernel/sched/idle.c do_idle do_idle_times: 1550
+[    1.052940] kernel: security/keys/key.c register_key_type Key type big_key registered
+[    1.055600] kernel: kernel/sched/idle.c do_idle do_idle_times: 1600
+[    1.056898] kernel: security/keys/key.c register_key_type Key type encrypted registered
+[    1.056926] kernel: AppArmor: AppArmor sha1 policy hashing enabled
+[    1.056931] kernel: security/integrity/ima/ima_init.c ima_init ima: No TPM chip found, activating TPM-bypass!
+[    1.056935] kernel: security/integrity/ima/ima_crypto.c ima_init_crypto ima: Allocated hash algorithm: sha1
+[    1.056940] kernel: security/integrity/ima/ima_policy.c ima_init_policy No architecture policies found
+[    1.056946] kernel: security/integrity/evm/evm_main.c evm_init_config evm: Initialising EVM extended attributes:
+[    1.056947] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.selinux
+[    1.056947] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.SMACK64
+[    1.056948] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.SMACK64EXEC
+[    1.056948] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.SMACK64TRANSMUTE
+[    1.056949] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.SMACK64MMAP
+[    1.056949] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.apparmor
+[    1.056950] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.ima
+[    1.056950] kernel: security/integrity/evm/evm_main.c evm_init_config evm: security.capability
+[    1.056951] kernel: security/integrity/evm/evm_main.c evm_init_config evm: HMAC attrs: 0x1
+[    1.058029] kernel: drivers/base/power/trace.c late_resume_init PM:   Magic number: 11:293:685
+[    1.058052] kernel:  clocksource: hash matches
+[    1.058248] kernel: rtc_cmos 00:03: setting system clock to 2019-11-10T13:39:02 UTC (1573393142)
+[    1.059399] kernel: mm/page_alloc.c free_reserved_area Freeing unused decrypted memory: 2040K
+[    1.059888] kernel: mm/page_alloc.c free_reserved_area Freeing unused kernel image memory: 2672K
+[    1.090049] kernel: kernel/sched/idle.c do_idle do_idle_times: 1650
+[    1.114062] kernel: Write protecting the kernel read-only data: 22528k
+[    1.114653] kernel: mm/page_alloc.c free_reserved_area Freeing unused kernel image memory: 2012K
+[    1.114994] kernel: mm/page_alloc.c free_reserved_area Freeing unused kernel image memory: 1496K
+[    1.123840] kernel: arch/x86/mm/dump_pagetables.c ptdump_walk_pgd_level_core x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.123841] kernel: arch/x86/mm/dump_pagetables.c ptdump_walk_user_pgd_level_checkwx x86/mm: Checking user space page tables
+[    1.132020] kernel: arch/x86/mm/dump_pagetables.c ptdump_walk_pgd_level_core x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.132022] kernel: init/main.c run_init_process Run /init as init process
+[    1.142106] kernel: kernel/sched/idle.c do_idle do_idle_times: 1700
+[    1.162440] kernel: kernel/sched/idle.c do_idle do_idle_times: 1750
+[    1.170402] kernel: kernel/sched/idle.c do_idle do_idle_times: 1800
+[    1.202215] kernel: kernel/sched/idle.c do_idle do_idle_times: 1850
+[    1.228309] kernel: wmi_bus wmi_bus-PNP0C14:01: WQBJ data block query control method not found
+[    1.228601] kernel: kernel/sched/idle.c do_idle do_idle_times: 1900
+[    1.232588] kernel: ahci 0000:00:17.0: version 3.0
+[    1.233542] kernel: intel-lpss 0000:00:15.0: enabling device (0000 -> 0002)
+[    1.233710] kernel: ahci 0000:00:17.0: AHCI 0001.0301 32 slots 2 ports 6 Gbps 0x3 impl SATA mode
+[    1.233713] kernel: ahci 0000:00:17.0: flags: 64bit ncq pm led clo only pio slum part deso sadm sds apst 
+[    1.235725] kernel: scsi host0: ahci
+[    1.235909] kernel: scsi host1: ahci
+[    1.235973] kernel: ata1: SATA max UDMA/133 abar m2048@0xb3237000 port 0xb3237100 irq 126
+[    1.235979] kernel: ata2: SATA max UDMA/133 abar m2048@0xb3237000 port 0xb3237180 irq 126
+[    1.248328] kernel: intel-lpss 0000:00:15.1: enabling device (0000 -> 0002)
+[    1.249249] kernel: kernel/sched/idle.c do_idle do_idle_times: 1950
+[    1.265658] kernel: i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+[    1.265921] kernel: kernel/sched/idle.c do_idle do_idle_times: 2000
+[    1.269205] kernel: crypto/cryptd.c cryptd_init_queue cryptd: max_cpu_qlen set to 1000
+[    1.273212] kernel: nvme nvme0: pci function 0000:08:00.0
+[    1.279165] kernel: arch/x86/crypto/aesni-intel_glue.c aesni_init AVX2 version of gcm_enc/dec engaged.
+[    1.279166] kernel: arch/x86/crypto/aesni-intel_glue.c aesni_init AES CTR mode by8 optimization enabled
+[    1.287833] kernel: kernel/sched/idle.c do_idle do_idle_times: 2050
+[    1.295417] kernel: kernel/sched/idle.c do_idle do_idle_times: 2100
+[    1.304258] kernel: kernel/sched/idle.c do_idle do_idle_times: 2150
+[    1.304259] kernel: kernel/sched/idle.c do_idle do_idle_times: 2150
+[    1.307264] kernel: usb 1-3: new full-speed USB device number 2 using xhci_hcd
+[    1.349228] kernel: checking generic (a0000000 7f0000) vs hw (a0000000 10000000)
+[    1.349230] kernel: fb0: switching to inteldrmfb from EFI VGA
+[    1.349297] kernel: drivers/tty/vt/vt.c do_bind_con_driver Console: switching to colour dummy device 80x25
+[    1.349341] kernel: i915 0000:00:02.0: vgaarb: deactivate vga console
+[    1.349932] kernel: kernel/sched/idle.c do_idle do_idle_times: 2200
+[    1.351372] kernel: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    1.351373] kernel: [drm] Driver supports precise vblank timestamp query.
+[    1.352655] kernel: i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    1.353477] kernel: [drm] Finished loading DMC firmware i915/skl_dmc_ver1_27.bin (v1.27)
+[    1.354443] kernel: kernel/sched/idle.c do_idle do_idle_times: 2250
+[    1.354444] kernel: kernel/sched/idle.c do_idle do_idle_times: 2250
+[    1.355583] kernel: kernel/sched/idle.c do_idle do_idle_times: 2300
+[    1.355584] kernel: kernel/sched/idle.c do_idle do_idle_times: 2300
+[    1.355585] kernel: kernel/sched/idle.c do_idle do_idle_times: 2300
+[    1.356688] kernel: kernel/sched/idle.c do_idle do_idle_times: 2350
+[    1.358735] kernel: kernel/sched/idle.c do_idle do_idle_times: 2400
+[    1.358735] kernel: kernel/sched/idle.c do_idle do_idle_times: 2400
+[    1.367146] kernel: [drm] Initialized i915 1.6.0 20190619 for 0000:00:02.0 on minor 0
+[    1.369271] kernel: ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    1.370433] kernel: drivers/input/input.c input_register_device input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input6
+[    1.371093] kernel: kernel/sched/idle.c do_idle do_idle_times: 2450
+[    1.375336] kernel: fbcon: i915drmfb (fb0) is primary device
+[    1.381963] kernel: drivers/tty/vt/vt.c do_bind_con_driver Console: switching to colour frame buffer device 240x67
+[    1.391709] kernel: kernel/sched/idle.c do_idle do_idle_times: 2500
+[    1.399972] kernel: nvme nvme0: 4/0/0 default/read/poll queues
+[    1.402425] kernel: i915 0000:00:02.0: fb0: i915drmfb frame buffer device
+[    1.402546] kernel:  nvme0n1: p1 p2
+[    1.402881] kernel: kernel/sched/idle.c do_idle do_idle_times: 2550
+[    1.408581] kernel: kernel/sched/idle.c do_idle do_idle_times: 2600
+[    1.411174] kernel: kernel/sched/idle.c do_idle do_idle_times: 2650
+[    1.456179] kernel: kernel/sched/idle.c do_idle do_idle_times: 2700
+[    1.456179] kernel: kernel/sched/idle.c do_idle do_idle_times: 2700
+[    1.460102] kernel: usb 1-3: New USB device found, idVendor=12c9, idProduct=1017, bcdDevice= 1.42
+[    1.460104] kernel: usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.460105] kernel: usb 1-3: Product: USB Gaming Mouse
+[    1.460106] kernel: usb 1-3: Manufacturer: E-Signal
+[    1.502199] kernel: kernel/sched/idle.c do_idle do_idle_times: 2750
+[    1.502200] kernel: kernel/sched/idle.c do_idle do_idle_times: 2750
+[    1.553299] kernel: ata2: SATA link down (SStatus 4 SControl 300)
+[    1.553320] kernel: ata1: SATA link down (SStatus 4 SControl 300)
+[    1.554722] kernel: kernel/sched/idle.c do_idle do_idle_times: 2800
+[    1.554723] kernel: kernel/sched/idle.c do_idle do_idle_times: 2800
+[    1.565269] kernel: kernel/sched/idle.c do_idle do_idle_times: 2850
+[    1.570189] kernel: kernel/sched/idle.c do_idle do_idle_times: 2900
+[    1.585935] kernel: usb 1-6: new high-speed USB device number 3 using xhci_hcd
+[    1.735259] kernel: kernel/sched/idle.c do_idle do_idle_times: 2950
+[    1.743165] kernel: usb 1-6: New USB device found, idVendor=04f2, idProduct=b56d, bcdDevice=33.05
+[    1.743167] kernel: usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.743168] kernel: usb 1-6: Product: HP Wide Vision HD
+[    1.743169] kernel: usb 1-6: Manufacturer: Chicony Electronics Co.,Ltd.
+[    1.745853] kernel: arch/x86/kernel/tsc.c tsc_refine_calibration_work tsc: Refined TSC clocksource calibration: 2399.995 MHz
+[    1.745858] kernel: kernel/time/clocksource.c __clocksource_update_freq_scale clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x229832cb14f, max_idle_ns: 440795241699 ns
+[    1.745896] kernel: kernel/time/clocksource.c __clocksource_select clocksource: Switched to clocksource tsc
+[    1.858605] kernel: kernel/sched/idle.c do_idle do_idle_times: 3000
+[    1.869913] kernel: usb 1-8: new full-speed USB device number 4 using xhci_hcd
+[    2.003900] kernel: kernel/sched/idle.c do_idle do_idle_times: 3050
+[    2.019693] kernel: usb 1-8: New USB device found, idVendor=8087, idProduct=0a2a, bcdDevice= 0.01
+[    2.019694] kernel: usb 1-8: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    2.026406] kernel: hidraw: raw HID events driver (C) Jiri Kosina
+[    2.030675] kernel: kernel/sched/idle.c do_idle do_idle_times: 3100
+[    2.036817] kernel: drivers/usb/core/driver.c usb_register_driver usbcore: registered new interface driver usbhid
+[    2.036819] kernel: drivers/hid/usbhid/hid-core.c hid_init usbhid: USB HID core driver
+[    2.038966] kernel: drivers/input/input.c input_register_device input: E-Signal USB Gaming Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:12C9:1017.0001/input/input7
+[    2.039086] kernel: hid-generic 0003:12C9:1017.0001: input,hidraw0: USB HID v1.10 Mouse [E-Signal USB Gaming Mouse] on usb-0000:00:14.0-3/input0
+[    2.039284] kernel: drivers/input/input.c input_register_device input: E-Signal USB Gaming Mouse Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1/0003:12C9:1017.0002/input/input8
+[    2.098042] kernel: kernel/sched/idle.c do_idle do_idle_times: 3150
+[    2.098112] kernel: drivers/input/input.c input_register_device input: E-Signal USB Gaming Mouse System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1/0003:12C9:1017.0002/input/input9
+[    2.098268] kernel: drivers/input/input.c input_register_device input: E-Signal USB Gaming Mouse Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1/0003:12C9:1017.0002/input/input10
+[    2.098394] kernel: drivers/input/input.c input_register_device input: E-Signal USB Gaming Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1/0003:12C9:1017.0002/input/input11
+[    2.098660] kernel: hid-generic 0003:12C9:1017.0002: input,hiddev0,hidraw1: USB HID v1.10 Keyboard [E-Signal USB Gaming Mouse] on usb-0000:00:14.0-3/input1
+[    2.098843] kernel: hid-generic 0003:12C9:1017.0003: hiddev1,hidraw2: USB HID v1.10 Device [E-Signal USB Gaming Mouse] on usb-0000:00:14.0-3/input2
+[    2.111165] kernel: kernel/sched/idle.c do_idle do_idle_times: 3200
+[    2.135033] kernel: psmouse serio1: synaptics: queried max coordinates: x [..5634], y [..4694]
+[    2.173328] kernel: psmouse serio1: synaptics: queried min coordinates: x [1380..], y [1268..]
+[    2.173332] kernel: psmouse serio1: synaptics: Your touchpad (PNP: SYN321e PNP0f13 ETD0000) says it can support a different bus. If i2c-hid and hid-rmi are not used, you might want to try setting psmouse.synaptics_intertouch to 1 and report this to linux-input@vger.kernel.org.
+[    2.186412] kernel: kernel/sched/idle.c do_idle do_idle_times: 3250
+[    2.190685] kernel: kernel/sched/idle.c do_idle do_idle_times: 3300
+[    2.249310] kernel: psmouse serio1: synaptics: Touchpad model: 1, fw: 8.2, id: 0x1e2b1, caps: 0xf00123/0x840300/0x12ec00/0x0, board id: 3232, fw id: 2245038
+[    2.282043] kernel: kernel/sched/idle.c do_idle do_idle_times: 3350
+[    2.296675] kernel: kernel/sched/idle.c do_idle do_idle_times: 3400
+[    2.301266] kernel: drivers/input/input.c input_register_device input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio1/input/input5
+[    2.303939] kernel: kernel/sched/idle.c do_idle do_idle_times: 3450
+[    2.314685] kernel: kernel/sched/idle.c do_idle do_idle_times: 3500
+[    2.326604] kernel: EXT4-fs (nvme0n1p2): mounted filesystem with ordered data mode. Opts: (null)
+[    2.326944] kernel: kernel/sched/idle.c do_idle do_idle_times: 3550
+[    2.349926] kernel: kernel/sched/idle.c do_idle do_idle_times: 3600
+[    2.388486] kernel: kernel/sched/idle.c do_idle do_idle_times: 3650
+[    2.399076] kernel: kernel/sched/idle.c do_idle do_idle_times: 3700
+[    2.412357] kernel: kernel/sched/idle.c do_idle do_idle_times: 3750
+[    2.433120] kernel: kernel/sched/idle.c do_idle do_idle_times: 3800
+[    2.441157] systemd[1]: Inserted module 'autofs4'
+[    2.443597] kernel: kernel/sched/idle.c do_idle do_idle_times: 3850
+[    2.457169] kernel: kernel/sched/idle.c do_idle do_idle_times: 3900
+[    2.465328] kernel: kernel/sched/idle.c do_idle do_idle_times: 3950
+[    2.474479] kernel: kernel/sched/idle.c do_idle do_idle_times: 4000
+[    2.482898] kernel: kernel/sched/idle.c do_idle do_idle_times: 4050
+[    2.491417] kernel: kernel/sched/idle.c do_idle do_idle_times: 4100
+[    2.522608] kernel: kernel/sched/idle.c do_idle do_idle_times: 4150
+[    2.530672] kernel: kernel/sched/idle.c do_idle do_idle_times: 4200
+[    2.538269] systemd[1]: systemd 242 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    2.558179] systemd[1]: Detected architecture x86-64.
+[    2.560308] systemd[1]: Set hostname to <a-HP-ENVY-Notebook>.
+[    2.560323] kernel: kernel/sched/idle.c do_idle do_idle_times: 4250
+[    2.560780] systemd[1]: Failed to bump fs.file-max, ignoring: Invalid argument
+[    2.573004] kernel: kernel/sched/idle.c do_idle do_idle_times: 4300
+[    2.588699] kernel: kernel/sched/idle.c do_idle do_idle_times: 4350
+[    2.593688] kernel: kernel/sched/idle.c do_idle do_idle_times: 4400
+[    2.604662] kernel: kernel/sched/idle.c do_idle do_idle_times: 4450
+[    2.611903] systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+[    2.614440] kernel: kernel/sched/idle.c do_idle do_idle_times: 4500
+[    2.617163] systemd[1]: /lib/systemd/system/winbind.service:8: PIDFile= references a path below legacy directory /var/run/, updating /var/run/samba/winbindd.pid → /run/samba/winbindd.pid; please update the unit file accordingly.
+[    2.627152] kernel: kernel/sched/idle.c do_idle do_idle_times: 4550
+[    2.636363] kernel: kernel/sched/idle.c do_idle do_idle_times: 4600
+[    2.645774] systemd[1]: /lib/systemd/system/docker.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/docker.sock → /run/docker.sock; please update the unit file accordingly.
+[    2.646069] kernel: kernel/sched/idle.c do_idle do_idle_times: 4650
+[    2.649622] systemd[1]: Listening on Journal Audit Socket.
+[    2.649745] systemd[1]: Listening on udev Kernel Socket.
+[    2.649756] systemd[1]: Reached target Remote File Systems.
+[    2.676534] kernel: EXT4-fs (nvme0n1p2): re-mounted. Opts: errors=remount-ro
+[    2.680878] kernel: kernel/sched/idle.c do_idle do_idle_times: 4700
+[    2.691019] kernel: lp: driver loaded but no devices found
+[    2.700522] kernel: drivers/char/ppdev.c ppdev_init ppdev: user-space parallel port driver
+[    2.719443] kernel: kernel/sched/idle.c do_idle do_idle_times: 4750
+[    2.793861] kernel: kernel/sched/idle.c do_idle do_idle_times: 4800
+[    2.797851] kernel: mm/swapfile.c __do_sys_swapon Adding 2097148k swap on /swapfile.  Priority:-2 extents:6 across:2260988k SSFS
+[    2.808799] kernel: kernel/sched/idle.c do_idle do_idle_times: 4850
+[    2.822117] kernel: kernel/sched/idle.c do_idle do_idle_times: 4900
+[    2.842348] kernel: kernel/sched/idle.c do_idle do_idle_times: 4950
+[    2.850111] kernel: kernel/sched/idle.c do_idle do_idle_times: 5000
+[    2.915804] kernel: kernel/sched/idle.c do_idle do_idle_times: 5050
+[    2.950712] kernel: kernel/sched/idle.c do_idle do_idle_times: 5100
+[    2.986467] kernel: kernel/sched/idle.c do_idle do_idle_times: 5150
+[    3.028407] kernel: kernel/sched/idle.c do_idle do_idle_times: 5200
+[    3.110207] kernel: kernel/sched/idle.c do_idle do_idle_times: 5250
+[    3.172904] kernel: drivers/input/input.c input_register_device input: HP Wireless hotkeys as /devices/virtual/input/input12
+[    3.179184] kernel: drivers/platform/x86/hp_accel.c lis3lv02d_add hp_accel: laptop model unknown, using default axes configuration
+[    3.180661] kernel: drivers/misc/lis3lv02d/lis3lv02d.c lis3lv02d_init_device lis3lv02d: 8 bits 3DC sensor found
+[    3.188009] kernel: kernel/sched/idle.c do_idle do_idle_times: 5300
+[    3.249515] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.683:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ippusbxd" pid=513 comm="apparmor_parser"
+[    3.252106] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.687:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=514 comm="apparmor_parser"
+[    3.265008] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.699:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=515 comm="apparmor_parser"
+[    3.273438] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.707:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=511 comm="apparmor_parser"
+[    3.273442] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.707:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=511 comm="apparmor_parser"
+[    3.273444] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.707:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=511 comm="apparmor_parser"
+[    3.273447] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.707:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer//sanitized_helper" pid=511 comm="apparmor_parser"
+[    3.273449] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.707:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-thumbnailer" pid=511 comm="apparmor_parser"
+[    3.274700] kernel: kernel/audit.c kauditd_printk_skb audit: type=1400 audit(1573393144.711:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=516 comm="apparmor_parser"
+[    3.423782] kernel: mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+[    3.444468] kernel: ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPCB.HEC.ECAV], AE_NOT_FOUND (20190703/psargs-330)
+[    3.444480] kernel: No Local Variables are initialized for Method [_TMP]
+[    3.444481] kernel: No Arguments are initialized for method [_TMP]
+[    3.444483] kernel: ACPI Error: Aborting method \_SB.PCI0.B0D4._TMP due to previous error (AE_NOT_FOUND) (20190703/psparse-529)
+[    3.497930] kernel: drivers/powercap/intel_rapl_common.c rapl_detect_domains intel_rapl_common: Found RAPL domain package
+[    3.497932] kernel: drivers/powercap/intel_rapl_common.c rapl_detect_domains intel_rapl_common: Found RAPL domain dram
+[    3.501586] kernel: drivers/input/input.c input_register_device input: ST LIS3LV02DL Accelerometer as /devices/platform/lis3lv02d/input/input13
+[    3.511169] kernel: proc_thermal 0000:00:04.0: Creating sysfs group for PROC_THERMAL_PCI
+[    3.522129] kernel: idma64 idma64.0: Found Intel integrated DMA 64-bit
+[    3.525040] kernel: net/bluetooth/lib.c bt_info Bluetooth: Core ver 2.22
+[    3.525056] kernel: net/socket.c sock_register NET: Registered protocol family 31
+[    3.525057] kernel: net/bluetooth/lib.c bt_info Bluetooth: HCI device and connection manager initialized
+[    3.525061] kernel: net/bluetooth/lib.c bt_info Bluetooth: HCI socket layer initialized
+[    3.525064] kernel: net/bluetooth/lib.c bt_info Bluetooth: L2CAP socket layer initialized
+[    3.525067] kernel: net/bluetooth/lib.c bt_info Bluetooth: SCO socket layer initialized
+[    3.563149] kernel: drivers/media/mc/mc-devnode.c media_devnode_init mc: Linux media interface: v0.10
+[    3.595526] kernel: net/wireless/reg.c load_builtin_regdb_keys cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    3.630093] kernel: idma64 idma64.1: Found Intel integrated DMA 64-bit
+[    3.675899] kernel: kernel/sched/idle.c do_idle do_idle_times: 5350
+[    3.729261] kernel: net/wireless/reg.c load_keys_from_buffer cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    3.829245] kernel: net/bluetooth/lib.c bt_info Bluetooth: hci0: read Intel version: 370810011003110e32
+[    3.829247] kernel: net/bluetooth/lib.c bt_info Bluetooth: hci0: Intel device is already patched. patch num: 32
+[    3.830212] kernel: drivers/usb/core/driver.c usb_register_driver usbcore: registered new interface driver btusb
+[    3.925230] kernel: drivers/media/v4l2-core/v4l2-dev.c videodev_init videodev: Linux video capture interface: v2.00
+[    4.009335] kernel: arch/x86/events/intel/rapl.c rapl_advertise RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+[    4.009337] kernel: arch/x86/events/intel/rapl.c rapl_advertise RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[    4.009338] kernel: arch/x86/events/intel/rapl.c rapl_advertise RAPL PMU: hw unit of domain package 2^-14 Joules
+[    4.009339] kernel: arch/x86/events/intel/rapl.c rapl_advertise RAPL PMU: hw unit of domain dram 2^-14 Joules
+[    4.009340] kernel: arch/x86/events/intel/rapl.c rapl_advertise RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[    4.009341] kernel: arch/x86/events/intel/rapl.c rapl_advertise RAPL PMU: hw unit of domain psys 2^-14 Joules
+[    4.033864] kernel: kernel/sched/idle.c do_idle do_idle_times: 5400
+[    4.172911] kernel: drivers/net/wireless/intel/iwlwifi/iwl-drv.c iwl_drv_init Intel(R) Wireless WiFi driver for Linux
+[    4.172912] kernel: drivers/net/wireless/intel/iwlwifi/iwl-drv.c iwl_drv_init Copyright(c) 2003- 2015 Intel Corporation
+[    4.183049] kernel: iwlwifi 0000:01:00.0: Found debug destination: EXTERNAL_DRAM
+[    4.183052] kernel: iwlwifi 0000:01:00.0: Found debug configuration: 0
+[    4.183301] kernel: iwlwifi 0000:01:00.0: loaded firmware version 29.1654887522.0 op_mode iwlmvm
+[    4.266699] kernel: uvcvideo: Found UVC 1.00 device HP Wide Vision HD (04f2:b56d)
+[    4.277000] kernel: iwlwifi 0000:01:00.0: Detected Intel(R) Dual Band Wireless AC 7265, REV=0x210
+[    4.290570] kernel: iwlwifi 0000:01:00.0: Applying debug destination EXTERNAL_DRAM
+[    4.290854] kernel: iwlwifi 0000:01:00.0: Allocated 0x00400000 bytes for firmware monitor.
+[    4.299166] kernel: iwlwifi 0000:01:00.0: base HW address: d0:57:7b:30:5f:66
+[    4.302506] kernel: drivers/platform/x86/hp-wmi.c hp_wmi_perform_query hp_wmi: query 0xd returned error 0x5
+[    4.303640] kernel: drivers/input/input.c input_register_device input: HP WMI hotkeys as /devices/virtual/input/input14
+[    4.316062] kernel: uvcvideo 1-6:1.0: Entity type for entity Extension 4 was not initialized!
+[    4.316065] kernel: uvcvideo 1-6:1.0: Entity type for entity Extension 3 was not initialized!
+[    4.316066] kernel: uvcvideo 1-6:1.0: Entity type for entity Processing 2 was not initialized!
+[    4.316068] kernel: uvcvideo 1-6:1.0: Entity type for entity Camera 1 was not initialized!
+[    4.317499] kernel: drivers/input/input.c input_register_device input: HP Wide Vision HD: HP Wide Visi as /devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.0/input/input15
+[    4.317721] kernel: drivers/usb/core/driver.c usb_register_driver usbcore: registered new interface driver uvcvideo
+[    4.317722] kernel: USB Video Class driver (1.1.1)
+[    4.360428] kernel: ieee80211 phy0: Selected rate control algorithm 'iwl-mvm-rs'
+[    4.361139] kernel: thermal thermal_zone6: failed to read out thermal zone (-61)
+[    4.392846] kernel: kernel/sched/idle.c do_idle do_idle_times: 5450
+[    4.661709] kernel: kernel/sched/idle.c do_idle do_idle_times: 5500
+[    4.728654] kernel: snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+[    4.775887] kernel: snd_hda_codec_conexant hdaudioC0D0: CX8200: BIOS auto-probing.
+[    4.776398] kernel: snd_hda_codec_conexant hdaudioC0D0: autoconfig for CX8200: line_outs=1 (0x17/0x0/0x0/0x0/0x0) type:speaker
+[    4.776401] kernel: snd_hda_codec_conexant hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    4.776403] kernel: snd_hda_codec_conexant hdaudioC0D0:    hp_outs=1 (0x16/0x0/0x0/0x0/0x0)
+[    4.776404] kernel: snd_hda_codec_conexant hdaudioC0D0:    mono: mono_out=0x0
+[    4.776404] kernel: snd_hda_codec_conexant hdaudioC0D0:    inputs:
+[    4.776406] kernel: snd_hda_codec_conexant hdaudioC0D0:      Internal Mic=0x1a
+[    4.776407] kernel: snd_hda_codec_conexant hdaudioC0D0:      Mic=0x19
+[    4.796349] kernel: drivers/input/input.c input_register_device input: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input16
+[    4.796417] kernel: drivers/input/input.c input_register_device input: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input17
+[    4.796472] kernel: drivers/input/input.c input_register_device input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input18
+[    4.796528] kernel: drivers/input/input.c input_register_device input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input19
+[    4.796580] kernel: drivers/input/input.c input_register_device input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input20
+[    4.796631] kernel: drivers/input/input.c input_register_device input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input21
+[    4.796682] kernel: drivers/input/input.c input_register_device input: HDA Intel PCH HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input22
+[    4.805252] kernel: kernel/sched/idle.c do_idle do_idle_times: 5550
+[    4.873760] kernel: kernel/sched/idle.c do_idle do_idle_times: 5600
+[    5.153175] kernel: drivers/powercap/intel_rapl_common.c rapl_detect_domains intel_rapl_common: Found RAPL domain package
+[    5.153178] kernel: drivers/powercap/intel_rapl_common.c rapl_detect_domains intel_rapl_common: Found RAPL domain core
+[    5.153180] kernel: drivers/powercap/intel_rapl_common.c rapl_detect_domains intel_rapl_common: Found RAPL domain uncore
+[    5.153181] kernel: drivers/powercap/intel_rapl_common.c rapl_detect_domains intel_rapl_common: Found RAPL domain dram
+[    5.181045] kernel: kernel/sched/idle.c do_idle do_idle_times: 5650
+[    5.238201] kernel: kernel/sched/idle.c do_idle do_idle_times: 5700
+[    5.246065] kernel: kernel/sched/idle.c do_idle do_idle_times: 5750
+[    5.321893] kernel: kernel/sched/idle.c do_idle do_idle_times: 5800
+[    5.447230] kernel: kernel/sched/idle.c do_idle do_idle_times: 5850
+[    5.500397] kernel: kernel/sched/idle.c do_idle do_idle_times: 5900
+[    5.531208] kernel: kernel/sched/idle.c do_idle do_idle_times: 5950
+[    5.567500] kernel: kernel/sched/idle.c do_idle do_idle_times: 6000
+[    5.593706] kernel: net/bluetooth/lib.c bt_info Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    5.593708] kernel: net/bluetooth/lib.c bt_info Bluetooth: BNEP filters: protocol multicast
+[    5.593712] kernel: net/bluetooth/lib.c bt_info Bluetooth: BNEP socket layer initialized
+[    5.627859] kernel: kernel/sched/idle.c do_idle do_idle_times: 6050
+[    5.759243] kernel: net/bluetooth/lib.c bt_err Bluetooth: hci0: HCI reset during shutdown failed
+[    5.781539] kernel: kernel/sched/idle.c do_idle do_idle_times: 6100
+[    5.874652] kernel: kernel/sched/idle.c do_idle do_idle_times: 6150
+[    5.921051] kernel: iwlwifi 0000:01:00.0 wlo1: renamed from wlan0
+[    6.064654] kernel: iwlwifi 0000:01:00.0: Applying debug destination EXTERNAL_DRAM
+[    6.080460] kernel: kernel/sched/idle.c do_idle do_idle_times: 6200
+[    6.102421] kernel: kernel/sched/idle.c do_idle do_idle_times: 6250
+[    6.134566] kernel: kernel/sched/idle.c do_idle do_idle_times: 6300
+[    6.151506] kernel: iwlwifi 0000:01:00.0: Applying debug destination EXTERNAL_DRAM
+[    6.152970] kernel: iwlwifi 0000:01:00.0: FW already configured (0) - re-configuring
+[    6.156998] kernel: kernel/sched/idle.c do_idle do_idle_times: 6350
+[    6.251681] kernel: kernel/sched/idle.c do_idle do_idle_times: 6400
+[    6.333887] kernel: kernel/sched/idle.c do_idle do_idle_times: 6450
+[    6.359740] kernel: kernel/sched/idle.c do_idle do_idle_times: 6500
+[    6.372872] kernel: kernel/sched/idle.c do_idle do_idle_times: 6550
+[    6.403687] kernel: kernel/sched/idle.c do_idle do_idle_times: 6600
+[    6.405664] kernel: kernel/sched/idle.c do_idle do_idle_times: 6650
+[    6.434603] kernel: kernel/sched/idle.c do_idle do_idle_times: 6700
+[    6.483054] kernel: kernel/sched/idle.c do_idle do_idle_times: 6750
+[    6.494672] kernel: kernel/sched/idle.c do_idle do_idle_times: 6800
+[    6.497508] kernel: kernel/sched/idle.c do_idle do_idle_times: 6850
+[    6.520400] kernel: kernel/sched/idle.c do_idle do_idle_times: 6900
+[    6.559629] kernel: kernel/sched/idle.c do_idle do_idle_times: 6950
+[    6.565202] kernel: kernel/sched/idle.c do_idle do_idle_times: 7000
+[    6.570312] kernel: kernel/sched/idle.c do_idle do_idle_times: 7050
+[    6.575084] kernel: kernel/sched/idle.c do_idle do_idle_times: 7100
+[    6.580598] kernel: kernel/sched/idle.c do_idle do_idle_times: 7150
+[    6.587787] kernel: kernel/sched/idle.c do_idle do_idle_times: 7200
+[    6.587788] kernel: kernel/sched/idle.c do_idle do_idle_times: 7200
+[    6.592632] kernel: kernel/sched/idle.c do_idle do_idle_times: 7250
+[    6.596909] kernel: kernel/sched/idle.c do_idle do_idle_times: 7300
+[    6.601237] kernel: kernel/sched/idle.c do_idle do_idle_times: 7350
+[    6.605428] kernel: kernel/sched/idle.c do_idle do_idle_times: 7400
+[    6.629897] kernel: kernel/sched/idle.c do_idle do_idle_times: 7450
+[    6.713856] kernel: kernel/sched/idle.c do_idle do_idle_times: 7500
+[    6.769897] kernel: kernel/sched/idle.c do_idle do_idle_times: 7550
+[    6.769898] kernel: kernel/sched/idle.c do_idle do_idle_times: 7550
+[    6.792928] kernel: kernel/sched/idle.c do_idle do_idle_times: 7600
+[    6.807765] kernel: kernel/sched/idle.c do_idle do_idle_times: 7650
+[    6.814094] kernel: kernel/sched/idle.c do_idle do_idle_times: 7700
+[    6.823352] kernel: kernel/sched/idle.c do_idle do_idle_times: 7750
+[    6.840534] kernel: kernel/sched/idle.c do_idle do_idle_times: 7800
+[    6.854581] kernel: kernel/sched/idle.c do_idle do_idle_times: 7850
+[    6.884290] kernel: kernel/sched/idle.c do_idle do_idle_times: 7900
+[    6.891620] kernel: kernel/sched/idle.c do_idle do_idle_times: 7950
+[    6.928786] kernel: kernel/sched/idle.c do_idle do_idle_times: 8000
+[    6.963030] kernel: kernel/sched/idle.c do_idle do_idle_times: 8050
+[    7.013408] kernel: kernel/sched/idle.c do_idle do_idle_times: 8100
+[    7.045848] kernel: kernel/sched/idle.c do_idle do_idle_times: 8150
+[    7.108266] kernel: kernel/sched/idle.c do_idle do_idle_times: 8200
+[    7.115050] kernel: kernel/sched/idle.c do_idle do_idle_times: 8250
+[    7.152452] kernel: kernel/sched/idle.c do_idle do_idle_times: 8300
+[    7.176520] kernel: kernel/sched/idle.c do_idle do_idle_times: 8350
+[    7.204421] kernel: kernel/sched/idle.c do_idle do_idle_times: 8400
+[    7.204422] kernel: kernel/sched/idle.c do_idle do_idle_times: 8400
+[    7.205521] kernel: kernel/sched/idle.c do_idle do_idle_times: 8450
+[    7.221987] kernel: kernel/sched/idle.c do_idle do_idle_times: 8500
+[    7.235539] kernel: kernel/sched/idle.c do_idle do_idle_times: 8550
+[    7.258552] kernel: kernel/sched/idle.c do_idle do_idle_times: 8600
+[    7.264430] kernel: kernel/sched/idle.c do_idle do_idle_times: 8650
+[    7.275964] kernel: kernel/sched/idle.c do_idle do_idle_times: 8700
+[    7.285812] kernel: kernel/sched/idle.c do_idle do_idle_times: 8750
+[    7.303004] kernel: kernel/sched/idle.c do_idle do_idle_times: 8800
+[    7.315653] kernel: kernel/sched/idle.c do_idle do_idle_times: 8850
+[    7.370172] kernel: kernel/sched/idle.c do_idle do_idle_times: 8900
+[    7.383380] kernel: kernel/sched/idle.c do_idle do_idle_times: 8950
+[    7.426401] kernel: kernel/sched/idle.c do_idle do_idle_times: 9000
+[    7.432013] kernel: kernel/sched/idle.c do_idle do_idle_times: 9050
+[    7.450622] kernel: kernel/sched/idle.c do_idle do_idle_times: 9100
+[    7.451307] kernel: kernel/sched/idle.c do_idle do_idle_times: 9150
+[    7.531980] kernel: kernel/sched/idle.c do_idle do_idle_times: 9200
+[    7.560671] kernel: kernel/sched/idle.c do_idle do_idle_times: 9250
+[    7.568065] kernel: kernel/sched/idle.c do_idle do_idle_times: 9300
+[    7.578745] kernel: kernel/sched/idle.c do_idle do_idle_times: 9350
+[    7.607773] kernel: kernel/sched/idle.c do_idle do_idle_times: 9400
+[    7.623036] kernel: kernel/sched/idle.c do_idle do_idle_times: 9450
+[    7.629035] kernel: kernel/sched/idle.c do_idle do_idle_times: 9500
+[    7.634422] kernel: kernel/sched/idle.c do_idle do_idle_times: 9550
+[    7.649192] kernel: kernel/sched/idle.c do_idle do_idle_times: 9600
+[    7.686746] kernel: kernel/sched/idle.c do_idle do_idle_times: 9650
+[    7.691152] kernel: kernel/sched/idle.c do_idle do_idle_times: 9700
+[    7.701865] kernel: kernel/sched/idle.c do_idle do_idle_times: 9750
+[    7.724131] kernel: kernel/sched/idle.c do_idle do_idle_times: 9800
+[    7.775354] kernel: rfkill: input handler disabled
+[    7.838577] kernel: kernel/sched/idle.c do_idle do_idle_times: 9850
+[    7.878743] kernel: kernel/sched/idle.c do_idle do_idle_times: 9900
