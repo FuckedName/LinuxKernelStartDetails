@@ -1,0 +1,91 @@
+linux内核之关于内核解压缩的过程分析 此博文包含图片 (2012-03-31 11:40:00)转载▼
+标签： 杂谈	
+故事开始，０～～：
+内核版本:2.6.14
+
+http://blog.sina.com.cn/s/blog_9659cd4201011o4j.html
+
+硬件:fs2410(s3c2410)
+
+ 
+
+根据有关资料表示:内核启动之初内存状态如下:
+
+内核在内存的地址
+
+
+2410的datasheet 表示,内存硬件的基址是0x3000 0000 ,内核文挡表示32K(0x8000)的空间用作存放内核页表，那么0x30008000就是2410的内核在RAM中的启动地址.
+ 
+
+关于内核解压缩的过程分析 (此部分 网络摘录)
+
+
+内核压缩和解压缩代码都在目录kernel/arch/arm/boot/compressed，
+编译完成后将产生vmlinux、head.o、misc.o、head-s3c2410.o、piggy.o这几个文件，
+head.o是内核的头部文件，负责初始设置；
+misc.o将主要负责内核的解压工作，它在head.o之后；
+head-s3c2410.o文件主要针对的初始化，将在链接时与head.o合并；
+piggy.o是一个中间文件，其实是一个压缩的内核(kernel/vmlinux)，只不过没有和初始化文件及解压文件链接而已；
+vmlinux是没有(zImage是压缩过的内核)压缩过的内核，就是由piggy.o、head.o、misc.o、head-s3c2410.o组成的。
+
+在BootLoader完成系统的引导以后并将Linux内核调入内存之后，调用bootLinux()，
+这个函数将跳转到kernel的起始位置。
+如果kernel没有压缩，就可以启动了。
+如果kernel压缩过，则要进行解压，在压缩过的kernel头部有解压程序。
+压缩过得kernel入口第一个文件源码位置在arch/arm/boot/compressed/head.S。
+它将调用函数decompress_kernel()，这个函数在文件arch/arm/boot/compressed/misc.c中，
+decompress_kernel()又调用proc_decomp_setup(),arch_decomp_setup()进行设置，
+然后使用在打印出信息“Uncompressing Linux...”后，调用gunzip()。将内核放于指定的位置。
+
+压缩过的内核开始处是解压缩代码,影象中好象这段代码有0x40 大小,所以真正的内核执行代码从0x30008040开始的.
+
+以下分析head.S文件：
+(1)对于各种Arm CPU的DEBUG输出设定，通过定义宏来统一操作。
+(2)设置kernel开始和结束地址，保存architecture ID。
+(3)如果在ARM2以上的CPU中，用的是普通用户模式，则升到超级用户模式，然后关中断。
+(4)分析LC0结构delta offset，判断是否需要重载内核地址(r0存入偏移量，判断r0是否为零)。
+  这里是否需要重载内核地址，我以为主要分析arch/arm/boot/Makefile、arch/arm/boot/compressed/Makefile
+  和arch/arm/boot/compressed/vmlinux.lds.in三个文件，主要看vmlinux.lds.in链接文件的主要段的位置，
+  LOAD_ADDR(_load_addr)＝0x30008000，而对于TEXT_START(_text、_start)的位置只设为0，BSS_START(__bss_start)＝ALIGN(4)。
+  对于这样的结果依赖于，对内核解压的运行方式，也就是说，内核解压前是在内存(RAM)中还是在FLASH上，
+  因为这里，我们的BOOTLOADER将压缩内核(zImage)移到了RAM的0x30008000位置，我们的压缩内核是在内存(RAM)从0x30008000地址开始顺序排列，
+
+  因此我们的r0获得的偏移量是载入地址(0x30008000)。
+接下来的工作是要把内核镜像的相对地址转化为内存的物理地址，即重载内核地址。
+(5)需要重载内核地址，将r0的偏移量加到BSS region和GOT table中。
+(6)清空bss堆栈空间r2－r3。
+(7)建立C程序运行需要的缓存，并赋于64K的栈空间。
+(8)这时r2是缓存的结束地址，r4是kernel的最后执行地址，r5是kernel境象文件的开始地址。检查是否地址有冲突。
+  将r5等于r2，使decompress后的kernel地址就在64K的栈之后。
+(9)调用文件misc.c的函数decompress_kernel()，解压内核于缓存结束的地方(r2地址之后)。此时各寄存器值有如下变化：
+   r0为解压后kernel的大小
+   r4为kernel执行时的地址
+   r5为解压后kernel的起始地址
+   r6为CPU类型值(processor ID)
+   r7为系统类型值(architecture ID)
+(10)将reloc_start代码拷贝之kernel之后(r5+r0之后)，首先清除缓存，而后执行reloc_start。
+(11)reloc_start将r5开始的kernel重载于r4地址处。
+(12)清除cache内容，关闭cache，将r7中architecture ID赋于r1，执行r4开始的kernel代码。
+
+下面简单介绍一下解压缩过程，也就是函数decompress_kernel实现的功能：
+解压缩代码位于kernel/lib/inflate.c，inflate.c是从gzip源程序中分离出来的。包含了一些对全局数据的直接引用。
+在使用时需要直接嵌入到代码中。gzip压缩文件时总是在前32K字节的范围内寻找重复的字符串进行编码，
+在解压时需要一个至少为32K字节的解压缓冲区，它定义为window[WSIZE]。inflate.c使用get_byte()读取输入文件，
+它被定义成宏来提高效率。输入缓冲区指针必须定义为inptr，inflate.c中对之有减量操作。inflate.c调用flush_window()
+来输出window缓冲区中的解压出的字节串，每次输出长度用outcnt变量表示。在flush_window()中，还必
+须对输出字节串计算CRC并且刷新crc变量。在调用gunzip()开始解压之前，调用makecrc()初始化CRC计算表。
+最后gunzip()返回0表示解压成功。
+
+我们在内核启动的开始都会看到这样的输出：
+Uncompressing Linux...done, booting the kernel.
+这也是由decompress_kernel函数内部输出的，它调用了puts()输出字符串，
+puts是在kernel/include/asm-arm/arch-s3c2410/uncompress.h中实现的。
+
+执行完解压过程，再返回到head.S中，启动内核：
+
+call_kernel:   bl  cache_clean_flush
+        bl  cache_off
+        mov r0, #0
+        mov r1, r7         @ restore architecture number
+        mov pc, r4         @ call kernel
+下面就开始真正的内核了。
