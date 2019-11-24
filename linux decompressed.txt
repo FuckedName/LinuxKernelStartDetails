@@ -7,18 +7,13 @@ http://blog.sina.com.cn/s/blog_9659cd4201011o4j.html
 
 硬件:fs2410(s3c2410)
 
- 
-
 根据有关资料表示:内核启动之初内存状态如下:
 
 内核在内存的地址
 
-
 2410的datasheet 表示,内存硬件的基址是0x3000 0000 ,内核文挡表示32K(0x8000)的空间用作存放内核页表，那么0x30008000就是2410的内核在RAM中的启动地址.
- 
 
 关于内核解压缩的过程分析 (此部分 网络摘录)
-
 
 内核压缩和解压缩代码都在目录kernel/arch/arm/boot/compressed，
 编译完成后将产生vmlinux、head.o、misc.o、head-s3c2410.o、piggy.o这几个文件，
@@ -89,3 +84,4 @@ call_kernel:   bl  cache_clean_flush
         mov r1, r7         @ restore architecture number
         mov pc, r4         @ call kernel
 下面就开始真正的内核了。
+
